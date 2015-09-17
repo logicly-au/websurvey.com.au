@@ -1,4 +1,6 @@
 .bundle
 _site/
 .sass-cache/
+.travis/deploy_key
 Gemfile.lock
+
