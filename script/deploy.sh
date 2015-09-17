@@ -7,6 +7,7 @@ openssl aes-256-cbc -K $encrypted_a842c56f2ce8_key -iv $encrypted_a842c56f2ce8_i
 eval "$(ssh-agent -s)" #start the ssh agent
 chmod 600 .travis/deploy_key
 ssh-add .travis/deploy_key
-git checkout gh-pages
+git fetch origin
+git checkout -b gh-pages origin/gh-pages
 git merge master
 git push
