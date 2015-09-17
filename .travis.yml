@@ -12,6 +12,6 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 deploy:
   provider: script
-  script: ./script/deploy.sh
+  script: ./script/deploy
   on:
     branch: master
