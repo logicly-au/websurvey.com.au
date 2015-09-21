@@ -18,8 +18,8 @@ command -v $RUBYPATH/bin/htmlproof >/dev/null 2>&1 \
 command -v $PYTHONPATH/bin/html5validator >/dev/null 2>&1 \
   || pip install --user html5validator
 
-bundle exec jekyll build
+bundle exec $RUBYPATH/bin/jekyll build
 $PYTHONPATH/bin/html5validator --root ./_site
-bundle exec htmlproof ./_site --disable-external
+bundle exec $RUBYPATH/bin/htmlproof ./_site --disable-external
 (sleep 3; open http://127.0.0.1:4000) &
 bundle exec jekyll serve
