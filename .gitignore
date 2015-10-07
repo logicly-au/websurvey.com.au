@@ -1,6 +1,7 @@
 .bundle
+Gemfile.lock
+node_modules/
 _site/
 .sass-cache/
 .travis/deploy_key
-Gemfile.lock
 
