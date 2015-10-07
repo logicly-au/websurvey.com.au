@@ -5,4 +5,5 @@ bundle exec jekyll build
 #bundle exec htmlproof ./_site --check-html --disable-external
 $HOME/.local/bin/html5validator --root ./_site
 bundle exec htmlproof ./_site --disable-external
-find _site -name "*.html" -print -exec ./node_modules/a11y/cli.js {} --fail-on-error \;
+./node_modules/a11y/cli.js {_site/*.html,_site/**/*.html} --fail-on-error
+
