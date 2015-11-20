@@ -21,7 +21,7 @@ command -v $RUBYPATH/bin/htmlproof >/dev/null 2>&1 \
 command -v $PYTHONPATH/bin/html5validator >/dev/null 2>&1 \
   || pip install --user html5validator
 
-bundle exec $RUBYPATH/bin/jekyll build
+$RUBYPATH/bin/bundle exec $RUBYPATH/bin/jekyll build
 $PYTHONPATH/bin/html5validator --root ./_site
 echo "skipping htmlproof until fixed in El Capitan"
 #bundle exec $RUBYPATH/bin/htmlproof ./_site --disable-external
