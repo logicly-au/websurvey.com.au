@@ -26,4 +26,4 @@ $PYTHONPATH/bin/html5validator --root ./_site
 echo "skipping htmlproof until fixed in El Capitan"
 #bundle exec $RUBYPATH/bin/htmlproof ./_site --disable-external
 (sleep 3; open http://127.0.0.1:4000) &
-bundle exec jekyll serve
+$RUBYPATH/bin/bundle exec $RUBYPATH/bin/bundle/jekyll serve
