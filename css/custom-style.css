@@ -91,7 +91,7 @@ line-height: 1.1;
 text-transform: uppercase;
 }
 
-a, a:hover {
+a, a:hover, a:focus {
 	text-decoration: none!important;
 }
 
@@ -120,7 +120,12 @@ text-transform: none;
 }
 
 @media (min-width: 992px) {
-.navbar-nav>li>a:hover, #main-menu>li>a:hover, .navbar-nav>li.active>a, #main-menu>li.active>a {
+.navbar-nav>li>a:hover,
+#main-menu>li>a:hover,
+.navbar-nav>li>a:focus,
+#main-menu>li>a:focus,
+.navbar-nav>li.active>a,
+#main-menu>li.active>a {
 color: rgba(255, 255, 255, 0.9);
 }
 }
@@ -223,7 +228,9 @@ text-align: center;
 
 /* features */
 
-.features .feature img, .features .feature img:hover {
+.features .feature img,
+.features .feature img:hover,
+.features .feature a:focus {
 background-image: none;
 filter: none;
 border:none;
@@ -240,7 +247,9 @@ border-radius: 0px;
 text-align: center;
 }
 
-.features .feature:first-child img, .features .feature:first-child img:hover {
+.features .feature:first-child img,
+.features .feature:first-child img:hover,
+.features .feature:first-child a:focus  {
 background-image: none;
 filter: none;
 border:none;
@@ -399,7 +408,10 @@ line-height: 20px;
 font-weight:bold;
 }
 
-#footer a:hover, .strat-dat a:active  {
+#footer a:hover,
+#footer a:focus,
+.strat-dat a:active,
+.strat-dat a:focus   {
 color: #BABABA!important;
 }
 
