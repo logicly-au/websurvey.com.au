@@ -1,21 +1,21 @@
 /*/////////////////////////////////////////////////////////////////////
- // 
+ //
  // Custom theme code styles
  // Written by Themelize.me (http://themelize.me)
- // 
+ //
  // This is an empty starter template for overriding styles
  // set by Bootstrap & the theme
- // 
+ //
  // ----------------------------------------------------
- // 
+ //
  // Remove unused code for better performances
- // 
+ //
  // ----------------------------------------------------
- // 
+ //
  // @see - Usefuls tools online for editing
  // 1. http://charliepark.org/bootstrap_buttons/ - Button style generator
  // 2. http://www.colorzilla.com/gradient-editor/ - CSS3 gradient maker
- // 
+ //
  // @note
  // To ensure custom styles are picked up
  // wrap definitions in body tag
@@ -23,7 +23,7 @@
  // body .navbar-inner {
  //   background: #ff0000;
  // }
- // 
+ //
  /////////////////////////////////////////////////////////////////////*/
 /*
  * --------------------------------------------------
@@ -50,7 +50,7 @@
 /*
  * --------------------------------------------------
  * 2. Colours
- *-------------------------------------------------- 
+ *--------------------------------------------------
  */
 /*
  * --------------------------------------------------
@@ -96,7 +96,7 @@ a, a:hover {
 }
 
 
-.slide h4 
+.slide h4
 {
 	color: #98002E;
 	font-weight: bold;
@@ -121,13 +121,13 @@ text-transform: none;
 
 @media (min-width: 992px) {
 .navbar-nav>li>a:hover, #main-menu>li>a:hover, .navbar-nav>li.active>a, #main-menu>li.active>a {
-color: #BABABA;
+color: rgba(255, 255, 255, 0.9);
 }
 }
 
 
 /* Header */
-#navigation .slogan { 
+#navigation .slogan {
 margin: 10px 0 10px .5em; }
 
 
@@ -187,7 +187,7 @@ float: right;
 }
 .contact-icon-box span {
 font-size: 15px;
-font-weight:bold;	
+font-weight:bold;
 }
 
 }
@@ -208,7 +208,7 @@ display: none;
 }
 
 .tp-bullets  {
-display:none;	
+display:none;
 }
 
 
@@ -257,11 +257,11 @@ padding-right: 0em;
 
 @media (min-width: 992px) {
 .block.features {
-margin-bottom:1em;	
+margin-bottom:1em;
 }
 
 .space-below {
-margin-bottom: 1em;	
+margin-bottom: 1em;
 }
 
 .features .feature p {
@@ -270,11 +270,11 @@ padding: 0 15px;
 
 
 .features .feature.col-sm-6.col-md-3 {
-	border-left: 2px solid #e6e6e6;	
-	
+	border-left: 2px solid #e6e6e6;
+
 }
 .features .feature.col-sm-6.col-md-3:first-child {
-	border-left: none;		
+	border-left: none;
 }
 
 }
@@ -286,14 +286,14 @@ text-align: center;
 }
 
 .features .feature.col-sm-6.col-md-3 {
-	padding-right: 0px;	
-	padding-left: 0px;	
-	
+	padding-right: 0px;
+	padding-left: 0px;
+
 }
 
 #SurveyServices .services-intro {
-border-left: 2px solid #e6e6e6;	
-	margin-bottom:2em;	
+border-left: 2px solid #e6e6e6;
+	margin-bottom:2em;
 	padding: 10px 40px;
 }
 }
@@ -310,11 +310,11 @@ display: inline-block;
 }
 
 #SurveyFeatures, #SurveyServices {
-padding-top: 1em;	
+padding-top: 1em;
 }
 
 #SurveyFeatures .description {
-	border-bottom: 2px solid #e6e6e6;	
+	border-bottom: 2px solid #e6e6e6;
 	margin-bottom:1em;
 }
 
@@ -330,37 +330,37 @@ padding: .5em 1.5em 1.5em 1.5em;
 margin: 0 0 1em 0;
 }
 .box {
-padding-right:15px;	
+padding-right:15px;
 padding-left:15px;
 }
 
 .how-it-works  h3.title {
-font-size:1.15em;	
+font-size:1.15em;
 margin-bottom:1em;
 }
 
 .how-it-works  h3.title span {
-font-size:1.6em;	
+font-size:1.6em;
 }
 
 .how-it-works ul {
 margin:0 0 .5em 1em;
-padding: 0 .5em;	
+padding: 0 .5em;
 }
 .how-it-works p {
 margin:.5em 0 1em 0;
-padding:0;	
+padding:0;
 }
 .how-it-works p.no-space {
 margin:.5em 0 .4em 0;
-padding:0;	
+padding:0;
 }
 .how-it-works1 {
 background-image: -webkit-linear-gradient(left, #006699 0, #004970 100%);
 background-image: -o-linear-gradient(left, #006699 0, #004970 100%);
 background-image: linear-gradient(to right, #006699 0, #004970 100%);
 background-repeat: repeat-x;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#004970', GradientType=0);	
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#004970', GradientType=0);
 }
 
 .how-it-works2 {
@@ -368,20 +368,20 @@ background-image: -webkit-linear-gradient(left, #ad3358 0, #980023 100%);
 background-image: -o-linear-gradient(left, #ad3358 0, #980023 100%);
 background-image: linear-gradient(to right, #ad3358 0, #980023 100%);
 background-repeat: repeat-x;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad3358', endColorstr='#980023', GradientType=0);	
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad3358', endColorstr='#980023', GradientType=0);
 }
 
 .how-it-works3 {
-background-image: -webkit-linear-gradient(left, #3d8aab 0, #066d96 100%);
-background-image: -o-linear-gradient(left, #3d8aab 0, #066d96 100%);
-background-image: linear-gradient(to right, #3d8aab 0, #066d96 100%);
+background-image: -webkit-linear-gradient(left, #387e9d 0, #055f83 100%);
+background-image: -o-linear-gradient(left, #387e9d 0, #055f83 100%);
+background-image: linear-gradient(to right, #387e9d 0, #055f83 100%);
 background-repeat: repeat-x;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d8aab', endColorstr='#066d96', GradientType=0);	
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#387e9d', endColorstr='#055f83', GradientType=0);
 }
 
 /* footer */
 #footer h3 {
-margin-bottom: 1em;	
+margin-bottom: 1em;
 }
 
 #footer .navbar-brand {
@@ -422,6 +422,10 @@ margin-top:0;
 
 }
 
+#mce-success-response {
+  color: #c8f19f !important;
+}
+
 /* buttons */
 .btn-lg, .btn-group-lg > .btn, .btn-md, .btn-group-md > .btn {
 border-radius: 4px;
@@ -439,6 +443,11 @@ background-color: #0b6288;
 border-color: #044a68;
 }
 
+.btn-subscribe {
+  color: #ffffff;
+  background-color: #6f6f6f !important;
+  border-color: #aaa 1px solid !important;
+}
 
 
 /* mobile menu */
@@ -474,9 +483,9 @@ border-bottom: 1px solid rgba(255,255,255,0.1);
 @media (max-width: 768px) {
   /* Small devices (tablets, max 768px) */
   .tp-caption.sfb.ltl {
-	display:none;  
+	display:none;
   }
-  
+
   .tp-caption.customin.randomrotateout.start {
 
 
@@ -489,14 +498,14 @@ right: 29.390625px;
 
 
   }
-  
+
   h4.tp-caption.customin.randomrotateout.start {
 	margin-top: -2px!important;
   }
-  
+
  .tp-caption.customin.randomrotateout.btn.btn-md.btn-primary.start {
 	  margin-top: 20px!important;
   }
-  
-  
+
+
 }
