@@ -90,7 +90,7 @@ color: #98002E;
 }
 
 h2 {
-font-size:18px;
+font-size:1.3em;
 font-weight: 600;
 line-height: 1.1;
 text-transform: uppercase;
@@ -434,7 +434,7 @@ padding: 15px 5px;
 float: left;
 height: 50px;
 padding: 16px 0px;
-font-size: 15px;
+font-size: 1.1em;
 line-height: 20px;
 }
 
