@@ -80,7 +80,12 @@
 .contact-icon-box {
 display:none;
 }
-.navbar-nav>li.home-link a:hover i, #main-menu>li.home-link a:hover i, .navbar-nav>li.home-link a:link:hover i, #main-menu>li.home-link a:link:hover i, .navbar-nav>li.home-link a:focus:hover i, #main-menu>li.home-link a:focus:hover i {
+.navbar-nav>li.home-link a:hover i,
+#main-menu>li.home-link a:hover i,
+.navbar-nav>li.home-link a:link:hover i,
+#main-menu>li.home-link a:link:hover i,
+.navbar-nav>li.home-link a:focus i,
+#main-menu>li.home-link a:focus i  {
 color: #98002E;
 }
 
@@ -126,10 +131,9 @@ text-transform: none;
 #main-menu>li>a:focus,
 .navbar-nav>li.active>a,
 #main-menu>li.active>a {
-color: rgba(255, 255, 255, 0.9);
+color: #98002E;
 }
 }
-
 
 /* Header */
 #navigation .slogan {
@@ -158,12 +162,16 @@ border-bottom: none;
 padding: 20px 0 0px 0;
 }
 
+.header a.navbar-brand:focus>img,
+.header a.navbar-brand:hover>img {
+  opacity: 0.8;
+}
 
 @media (min-width: 992px) {
 .logo-box {
 	margin-bottom:2em;
 }
-.navbar-nav>li.home-link a i, #main-menu>li.home-link a i, .navbar-nav>li.home-link a:link i, #main-menu>li.home-link a:link i, .navbar-nav>li.home-link a:focus i, #main-menu>li.home-link a:focus i {
+.navbar-nav>li.home-link a i, #main-menu>li.home-link a i, .navbar-nav>li.home-link a:link i, #main-menu>li.home-link a:link i {
 margin: 0;
 display: block;
 text-align: center;
@@ -226,17 +234,31 @@ padding: 3em 1em;
 text-align: center;
 }
 
+.customers-carousel a:focus>img,
+.customers-carousel a:hover>img {
+  opacity: 0.8;
+}
+
 /* features */
 
 .features .feature img,
-.features .feature img:hover,
-.features .feature a:focus {
+.features .feature img:hover {
 background-image: none;
 filter: none;
 border:none;
 -webkit-border-radius: 0px;
 -moz-border-radius: 0px;
 border-radius: 0px;
+}
+
+.features .feature a:focus>img,
+.features .feature a:hover>img {
+  opacity: 0.8;
+}
+
+.features .feature a:focus,
+.features .feature a:hover {
+  color: #6d0112;
 }
 
 .features .feature img {
@@ -248,8 +270,7 @@ text-align: center;
 }
 
 .features .feature:first-child img,
-.features .feature:first-child img:hover,
-.features .feature:first-child a:focus  {
+.features .feature:first-child img:hover {
 background-image: none;
 filter: none;
 border:none;
@@ -396,6 +417,12 @@ margin-bottom: 1em;
 #footer .navbar-brand {
 padding: 15px 5px;
 }
+
+#footer a.navbar-brand:focus>img,
+#footer a.navbar-brand:hover>img {
+  opacity: 0.8;
+}
+
 .strat-dat {
 float: left;
 height: 50px;
@@ -436,6 +463,13 @@ margin-top:0;
 
 #mce-success-response {
   color: #c8f19f !important;
+}
+
+/* FAQ */
+
+.section-menu ul.nav-list li a:hover,
+.section-menu ul.nav-list li a:focus {
+  background: #f0f0f0;
 }
 
 /* buttons */

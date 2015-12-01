@@ -103,12 +103,12 @@
  * 1. Common Elements
  *--------------------------------------------------
  */
-body a,
-body a:focus {
+body a {
   color: #98002E;
   text-decoration: none;
 }
-body a:hover {
+body a:hover,
+body a:focus {
   color: #6d0112;
   text-decoration: underline;
 }
