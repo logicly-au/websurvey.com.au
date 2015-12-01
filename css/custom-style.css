@@ -133,7 +133,7 @@ text-transform: none;
 #main-menu>li>a:focus,
 .navbar-nav>li.active>a,
 #main-menu>li.active>a {
-color: #98002E;
+color: rgba(255, 255, 255, 0.8);
 }
 }
 
@@ -516,11 +516,15 @@ border-color: #044a68;
 }
 
 .btn-subscribe {
-  color: #ffffff;
-  background-color: #6f6f6f !important;
-  border-color: #aaa 1px solid !important;
+  background-color: #e5e5e5 !important;
+  color: #656565 !important;
 }
 
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: #f8f8f8 !important;
+  color: #656565 !important;
+}
 
 /* mobile menu */
 
