@@ -482,7 +482,8 @@ margin-top:0;
 .about-page h3,
 .data-page h3,
 .terms-page h3,
-.privacy-page h3 {
+.privacy-page h3,
+.accessibility-page h3 {
   font-size: 1em;
   color: #98002E;
   text-transform: none;
