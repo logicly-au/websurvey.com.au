@@ -101,10 +101,12 @@ a, a:hover, a:focus {
 }
 
 
-.slide h4
+.slide h2
 {
 	color: #98002E;
 	font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.4;
 
 }
 h4 {
@@ -162,8 +164,8 @@ border-bottom: none;
 padding: 20px 0 0px 0;
 }
 
-.header a.navbar-brand:focus>img,
-.header a.navbar-brand:hover>img {
+.header a.navbar-brand:focus>h1>img,
+.header a.navbar-brand:hover>h1>img {
   opacity: 0.8;
 }
 
@@ -410,8 +412,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#387e9d', endC
 }
 
 /* footer */
-#footer h3 {
-margin-bottom: 1em;
+#footer h4 {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  color: #CCCCCC;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1;
+  text-transform: capitalize;
 }
 
 #footer .navbar-brand {
@@ -465,11 +472,29 @@ margin-top:0;
   color: #c8f19f !important;
 }
 
-/* FAQ */
+/* Pages */
 
 .section-menu ul.nav-list li a:hover,
 .section-menu ul.nav-list li a:focus {
   background: #f0f0f0;
+}
+
+.about-page h3,
+.data-page h3,
+.terms-page h3,
+.privacy-page h3 {
+  font-size: 1em;
+  color: #98002E;
+  text-transform: none;
+}
+
+#SurveyFeatures h3,
+#SurveyServices h3,
+.faq-page h3 {
+  font-size: 1.1em;
+  line-height: 1.4;
+  color: #98002E;
+  text-transform: uppercase;
 }
 
 /* buttons */
