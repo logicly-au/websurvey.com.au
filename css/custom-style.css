@@ -195,6 +195,22 @@ h5 {
   	color: #fff;
   }
 
+  .navbar-nav .dropdown-menu li a.menu-item:hover,
+  .navbar-nav .dropdown-menu li a.menu-item:focus {
+    color: #010101;
+    border-bottom-color: #d9d9d9;
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    text-decoration: none;
+  }
+
+  .navbar-nav .dropdown-menu li a.menu-item:hover:before,
+  .navbar-nav .dropdown-menu li a.menu-item:focus:before {
+    color: #98002E;
+  }
+
   .contact-icon-box {
     font-size: 1.8em;
     color: #98002E;
