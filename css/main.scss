@@ -6,6 +6,7 @@
 /* External stylesheets */
 @import "vendors/bootstrap";
 @import "vendors/font-awesome";
+@import "vendors/gallery";
 
 /* Helpers needed for other files */
 @import "helpers/variables";
@@ -15,6 +16,6 @@
 @import "base/typography";
 
 /* Theme */
-@import "themes/colour-red";
-@import "themes/theme-style";
-@import "themes/custom-style";
+@import "theme/theme-style";
+@import "theme/colour-red";
+@import "theme/custom-style";
