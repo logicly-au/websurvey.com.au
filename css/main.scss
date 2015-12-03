@@ -1,0 +1,20 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+/* External stylesheets */
+@import "vendors/bootstrap";
+@import "vendors/font-awesome";
+
+/* Helpers needed for other files */
+@import "helpers/variables";
+@import "helpers/mixins";
+
+/* Base styling */
+@import "base/typography";
+
+/* Theme */
+@import "themes/colour-red";
+@import "themes/theme-style";
+@import "themes/custom-style";
