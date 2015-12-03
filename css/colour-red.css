@@ -1,21 +1,21 @@
 /*/////////////////////////////////////////////////////////////////////
- // 
+ //
  // Custom theme code styles
  // Written by Themelize.me (http://themelize.me)
- // 
+ //
  // This is an empty starter template for overriding styles
  // set by Bootstrap & the theme
- // 
+ //
  // ----------------------------------------------------
- // 
+ //
  // Remove unused code for better performances
- // 
+ //
  // ----------------------------------------------------
- // 
+ //
  // @see - Usefuls tools online for editing
  // 1. http://charliepark.org/bootstrap_buttons/ - Button style generator
  // 2. http://www.colorzilla.com/gradient-editor/ - CSS3 gradient maker
- // 
+ //
  // @note
  // To ensure custom styles are picked up
  // wrap definitions in body tag
@@ -23,7 +23,7 @@
  // body .navbar-inner {
  //   background: #ff0000;
  // }
- // 
+ //
  /////////////////////////////////////////////////////////////////////*/
 .list-reset {
   margin: 0;
@@ -103,12 +103,12 @@
  * 1. Common Elements
  *--------------------------------------------------
  */
-body a,
-body a:focus {
+body a {
   color: #98002E;
   text-decoration: none;
 }
-body a:hover {
+body a:hover,
+body a:focus {
   color: #6d0112;
   text-decoration: underline;
 }
@@ -636,7 +636,7 @@ ul.nav-tabs li.open.active a:active {
 }
 /*
  * --------------------------------------------------
- * 2. Header & Navigation 
+ * 2. Header & Navigation
  *--------------------------------------------------
  */
 body .header-hidden {
@@ -884,7 +884,7 @@ body .navbar-nav li.dropdown.open.active > .dropdown-toggle .caret {
 /*
  * --------------------------------------------------
  * 3. Content Area
- *-------------------------------------------------- 
+ *--------------------------------------------------
  */
 body .pricing-stack .well .price {
   color: #98002E;
@@ -899,18 +899,21 @@ body .pricing-stack .well.active .price {
   /* primary colour */
   border-color: #98002E;
 }
-body .section-menu ul.nav-list li a:hover i {
+body .section-menu ul.nav-list li a:hover i,
+body .section-menu ul.nav-list li a:focus i {
   color: #98002E;
 }
 body .section-menu ul.nav-list li.active > a,
-body .section-menu ul.nav-list li.active > a:hover {
+body .section-menu ul.nav-list li.active > a:hover,
+body .section-menu ul.nav-list li.active > a:focus {
   color: #98002E;
   /* primary colour */
   border-left-color: #98002E;
   /* primary colour */
 }
 body .section-menu ul.nav-list li.active > a i,
-body .section-menu ul.nav-list li.active > a:hover i {
+body .section-menu ul.nav-list li.active > a:hover i,
+body .section-menu ul.nav-list li.active > a:focus i {
   color: #98002E;
 }
 body .stats .stat .well {
