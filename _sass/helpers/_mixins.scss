@@ -1,0 +1,20 @@
+$desktop-width:       992px;
+$responsive-width:    768px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$responsive-width}) {
+    @content;
+  }
+}
+
+@mixin responsive {
+  @media only screen and (max-width: #{$responsive-width}), (min-device-width: 250px) and (max-device-width: #{$responsive-width}) {
+    @content;
+  }
+}
