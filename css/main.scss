@@ -17,5 +17,12 @@
 
 /* Theme */
 @import "theme/theme-style";
-@import "theme/colour-red";
-@import "theme/custom-style";
+@import "theme/websurvey";
+
+/* Includes */
+@import "includes/footer";
+@import "includes/header";
+@import "includes/sidebar";
+
+/* Individual pages */
+@import "pages/home";
