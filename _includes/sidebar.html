@@ -1,0 +1,29 @@
+<!-- sidebar -->
+<div class="col-md-3 sidebar">
+  <!-- Sections Menu-->
+  <div class="section-menu">
+    <ul class="nav nav-list">
+      <li {% if include.param == "started" %} class="active" {% endif %}>
+        <a href="/faq/" class="first">
+          Getting Started
+          <small>An introduction to WebSurvey</small>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+      <li {% if include.param == "technical" %} class="active" {% endif %}>
+        <a href="/faq/technical-features.html" class="first">
+          Technical Features
+          <small>Secure and Accessible</small>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+      <li {% if include.param == "about" %} class="active" {% endif %}>
+        <a href="/faq/about-web-survey.html" class="first">
+          About WebSurvey
+          <small>Our Philosophy</small>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
