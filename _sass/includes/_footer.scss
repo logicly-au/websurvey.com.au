@@ -1,0 +1,92 @@
+#footer {
+  background: $footer-background;
+  color: $secondary-font-colour;
+  min-height: 200px;
+  padding: 30px 0;
+  border-top: 2px solid $theme-colour;
+  h4 {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    color: $footer-text-colour;
+    line-height: 1;
+    text-transform: capitalize;
+  }
+  a {
+    color: $footer-text-colour;
+    font-weight:bold;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $footer-hover-colour;
+    }
+  }
+  .block {
+    margin-bottom: 2em;
+  }
+  .inline {
+    display: inline-block;
+  }
+  .container {
+    position: relative;
+  }
+  .contact-block {
+    i {
+      padding-right: 0.5em;
+    }
+  }
+  .btn-subscribe {
+    background-color: $footer-btn-bg !important;
+    color: $primary-font-colour !important;
+    &:hover,
+    &:focus {
+      background-color: $footer-btn-hover !important;
+    }
+  }
+  #toplink {
+    margin-bottom: -25px;
+    text-align: center;
+    a {
+      color: $secondary-font-colour;
+      &:hover,
+      &:focus {
+        color: $footer-hover-colour;
+      }
+    }
+    i {
+      color: $theme-colour;
+    }
+  }
+  .subfooter {
+    border-top: 1px dotted rgba(255,255,255,0.1);
+    margin-top: 1em;
+    padding-top: 1em;
+    .strat-dat {
+      float: left;
+      height: 50px;
+      padding: 16px 0px;
+      font-size: 1.1em;
+      line-height: 20px;
+    }
+    .navbar-brand {
+      padding: 15px 5px;
+      &:hover>img,
+      &:focus>img {
+        opacity: 0.8;
+      }
+    }
+    .list-inline {
+      text-align: center;
+    }
+    .footer-menu {
+      float: left !important;
+      margin:.5em 0 0 .2em;
+      @include desktop {
+        float: right !important;
+        margin-top:0;
+      }
+    }
+    #mce-success-response {
+      color: $footer-success-colour !important;
+    }
+  }
+}

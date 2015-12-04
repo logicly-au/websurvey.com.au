@@ -1,0 +1,76 @@
+.sidebar {
+  margin: 2em 0 1em 0;
+  @include desktop {
+    margin: 0;
+  }
+  .section-menu ul.nav-list {
+    padding: 2em 0;
+    margin-left: 0;
+    @include desktop {
+      border-right: 1px solid $border-grey;
+    }
+    li {
+      a {
+        color: $sidebar-font;
+        color: rgba(27, 27, 27, 0.7);
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        font-weight: bold;
+        font-size: 18px;
+        border: 1px solid $border-grey;
+        border-top: none;
+        margin: 0 -1px 0 3px;
+        -webkit-box-shadow: 1px 1px 1px #ffffff;
+        box-shadow: 1px 1px 1px #ffffff;
+        background: $sidebar-bg;
+        text-shadow: none;
+        padding: 8px 15px;
+        position: relative;
+        &:hover,
+        &:focus {
+          background: $sidebar-bg-hover;
+          i {
+            color: $theme-colour;
+          }
+        }
+        i {
+          font-size: 22px;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          color: $sidebar-bg-hover;
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+          @include desktop {
+            right: 10px;
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+        }
+        small {
+          display: block;
+          font-weight: normal;
+          color: rgba(27, 27, 27, 0.5);
+        }
+      }
+      a.first {
+        border-top: 1px solid $border-grey;
+      }
+    }
+    li.active > a {
+      border-left: 4px solid $theme-colour;
+      color: $theme-colour;
+      margin: 0 -1px 0 0;
+      background: $body-background;
+      @include desktop {
+        border-right-color: $body-background;
+      }
+      i {
+        color: $theme-colour;
+      }
+    }
+  }
+}

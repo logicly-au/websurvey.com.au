@@ -1,0 +1,239 @@
+#navigation {
+  &::after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+  &::before {
+    content: " ";
+    display: table;
+  }
+  .header-upper {
+    background: $theme-colour;
+    position: relative;
+    padding: 5px 0;
+  }
+  .header {
+    background: $body-background;
+    height: auto;
+    padding: 20px 0 0px 0;
+    /* Top nav logo, slogan and contact */
+    .navbar {
+      margin-bottom: 0;
+      border: none;
+      background: none;
+      background-color: transparent;
+      background-image: none;
+      border-radius: 0;
+      @include tablet {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      }
+      &::after {
+        clear: both;
+        content: " ";
+        display: table;
+      }
+      &::before {
+        content: " ";
+        display: table;
+      }
+      .logo-box {
+        @include desktop {
+          margin-bottom: 2em;
+        }
+        .navbar-brand {
+          padding: 0;
+          margin: 6px 0 0 0;
+          height: auto;
+          h1 {
+            margin: 0;
+          }
+          &:focus>h1>img,
+          &:focus>h1>img {
+            opacity: 0.8;
+          }
+          @include tablet {
+            float: left;
+          }
+        }
+        .slogan {
+          color: $header-slogan;
+          margin: 15px 0 10px .5em;
+          @include desktop {
+            margin: 20px 0 0 1em;
+          }
+          @include tablet {
+            float: left;
+            margin: 20px 0 0 1em;
+            padding: 12px 0 8px 1em;
+            border-left: 1px solid $border-grey;
+          }
+        }
+      }
+      .contact-icon-box {
+        display: none;
+        @include desktop {
+          display: block;
+          font-size: 1.8em;
+          color: $theme-colour;
+          line-height: 26px;
+          margin-top: 20px;
+          margin-left: 10px;
+          float: right;
+          span {
+            font-size: 0.6em;
+            font-weight:bold;
+          }
+        }
+      }
+    }
+
+    /* Bottom navbar with nav links */
+    .navbar-btn {
+      font-size: 18px;
+      color: $secondary-font-colour;
+      background: $navbar-btn;
+      padding: 0;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      display: block;
+      height: 32px;
+      width: 32px;
+      line-height: 26px;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 10px;
+      float: right;
+      font-size: 22px;
+      line-height: 28px;
+      &:focus {
+        color: $secondary-font-colour;
+      }
+      &:hover {
+        background: $theme-colour;
+      }
+      @include tablet {
+        margin-top: 10px;
+      }
+      @include desktop {
+        display: none;
+      }
+      .fa {
+        vertical-align: top;
+        display: block;
+        line-height: 1;
+        margin: 5px 0 0 0;
+      }
+    }
+    .navbar-btn.open {
+      background: $theme-colour;
+    }
+
+    .navbar-collapse {
+      float: left;
+      clear: both;
+      width:100%;
+      background: $header-background;
+      border-bottom: solid 4px $theme-colour;
+      -webkit-border-radius: 3px 3px 0 0;
+      -moz-border-radius: 3px 3px 0 0;
+      border-radius: 3px 3px 0 0;
+      display: none !important;
+      @include desktop {
+        display: block !important;
+      }
+      &::after {
+        clear: both;
+        content: " ";
+        display: table;
+      }
+      &::before {
+        content: " ";
+        display: table;
+      }
+      .navbar-nav  {
+        >li>a {
+          font-size: 0.86em;
+          @include desktop {
+            padding: 5px 15px;
+            color: $secondary-font-colour;
+            &:hover,
+            &:focus {
+              color: rgba(255, 255, 255, 0.8);
+            }
+          }
+        }
+        >li.home-link a {
+          &:hover i,
+          &:link:hover i,
+          &:focus i  {
+            color: $theme-colour;
+          }
+          @include desktop {
+            padding: 0;
+          }
+          i,
+          &:link i {
+            @include desktop {
+              margin: 0;
+              display: block;
+              text-align: center;
+              color: $secondary-font-colour;
+              font-size: 20px;
+              padding: 5px 15px;
+            }
+          }
+        }
+        .dropdown.open a {
+          color: $primary-font-colour;
+          border-top-color: $theme-colour;
+        }
+        .dropdown-menu {
+          margin-top: -1px !important;
+          padding: 4px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          left: auto;
+          border: 1px solid #f2f2f2;
+          border-bottom-width: 2px;
+          font-size: 12px;
+          border-bottom-color: $theme-colour;
+
+          li a.menu-item {
+            &:hover,
+            &:focus {
+              color: #010101;
+              border-bottom-color: #d9d9d9;
+              background-image: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+              background-image: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+              background-repeat: repeat-x;
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+              text-decoration: none;
+              &::before {
+                color: $theme-colour important;
+              }
+            }
+          }
+          li.active > a {
+            &::before,
+            &:hover,
+            &:focus {
+              color: $theme-colour;
+              &::before {
+                color: $theme-colour;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.navbar-collapse .dropdown-menu li a:hover:before,
+.navbar-collapse .dropdown-menu li a.menu-item:hover:before  {
+  color: $theme-colour !important;
+}
