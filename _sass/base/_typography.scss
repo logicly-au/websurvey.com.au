@@ -1,0 +1,59 @@
+body,
+html {
+  font-family: $primary-font;
+  font-size: $primary-font-size;
+  color: $primary-font-colour;
+}
+
+h2 {
+  font-size:1.3em;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+a {
+  color: $theme-colour;
+  text-decoration: none !important;
+  &:hover,
+  &:focus {
+    color: $link-hover;
+    text-decoration: none !important;
+  }
+}
+
+.slide h2 {
+	color: $theme-colour;
+	font-weight: bold !important;
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+h3,
+h4,
+h5 {
+  color: $theme-colour;
+}
+
+h4 span {
+  text-transform: none;
+}
+
+h5,
+.about-page h3,
+.data-page h3,
+.terms-page h3,
+.privacy-page h3,
+.accessibility-page h3 {
+  font-size: 1em;
+  text-transform: none;
+  margin: 10px 0;
+}
+ h4,
+#SurveyFeatures h3,
+#SurveyServices h3,
+.faq-page h3 {
+  font-size: 1.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}

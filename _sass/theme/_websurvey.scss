@@ -1,0 +1,64 @@
+html,
+body {
+  background-color: $body-background;
+}
+
+#content {
+  padding: 30px 0;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* all pages */
+.title-divider {
+  text-align: left;
+  margin-bottom: 1em;
+  background: $body-background url(../img/bg_divider.png) left center repeat-x;
+  padding: 0;
+  span {
+    background: $body-background;
+    padding-right: 0.5em;
+    span {
+      text-transform: none;
+      padding-right: 0em;
+    }
+  }
+}
+
+/* Default buttons */
+[class^='btn'] {
+  border-radius: 4px;
+  font-weight:bold;
+}
+
+.btn-primary {
+  color: $secondary-font-colour;
+  background-color: $button-bg;
+  border-color: $button-border;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-bg-hover;
+  }
+}
+
+/* features and services pages */
+#SurveyFeatures, #SurveyServices {
+  padding-top: 1em;
+}
+
+.feature-icon {
+  text-align: center!important;
+  img {
+    @include tablet {
+      display: inline-block;
+    }
+  }
+}
+
+.description {
+	border-bottom: 2px solid $border-grey;
+	margin-bottom:1em;
+}
