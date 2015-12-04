@@ -50,7 +50,7 @@
           h1 {
             margin: 0;
           }
-          &:focus>h1>img,
+          &:hover>h1>img,
           &:focus>h1>img {
             opacity: 0.8;
           }
@@ -234,6 +234,8 @@
   }
 }
 .navbar-collapse .dropdown-menu li a:hover:before,
-.navbar-collapse .dropdown-menu li a.menu-item:hover:before  {
+.navbar-collapse .dropdown-menu li a.menu-item:hover:before,
+.navbar-collapse .dropdown-menu li a:focus:before,
+.navbar-collapse .dropdown-menu li a.menu-item:focus:before  {
   color: $theme-colour !important;
 }
