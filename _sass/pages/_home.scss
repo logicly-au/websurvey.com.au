@@ -1,0 +1,181 @@
+/* Top image and slogans */
+#highlighted {
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-bottom: 1px solid rgba(27, 27, 27, 0.2);
+  border-top: none;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  color: #1b1b1b;
+  .inner {
+    background: url(../img/bg_diamond.png) left bottom repeat-x;
+    .btn-lg {
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.33;
+      border-radius: 2px;
+    }
+    .flexslider {
+      background: transparent;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      border: none;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      .slide {
+        overflow: hidden;
+        -webkit-transform: translateZ(0);
+        img {
+          width: auto;
+          display: inline;
+          max-width: 100%;
+          height: auto !important;
+        }
+        .caption {
+          padding: 5%;
+          text-align: center;
+          @include desktop {
+            padding: 5% 0;
+          }
+          @include tablet {
+            text-align: left;
+          }
+          .btn {
+            margin: 0;
+          }
+        }
+      }
+      .slides > .slide {
+        display: none;
+        -webkit-backface-visibility: hidden;
+      }
+    }
+  }
+  &::after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+  &::before {
+    content: " ";
+    display: table;
+  }
+}
+
+/* List of features */
+.block.features {
+  @include desktop {
+    margin-bottom:1em;
+  }
+
+  .feature {
+    text-align: center;
+    margin-bottom: 2em;
+    @include tablet {
+      margin-bottom: .5em;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    @include desktop {
+      border-left: 2px solid $border-grey;
+    }
+    &:first-child {
+      @include desktop {
+        border-left: none;
+      }
+    }
+    a {
+      color: $theme-colour;
+      &:focus,
+      &:hover {
+        color: $link-hover;
+        text-decoration: none !important;
+        > img {
+          opacity: 0.8;
+        }
+      }
+    }
+    img {
+      margin-bottom:1em;
+    }
+    p {
+      @include desktop {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+/* Why Websurvey */
+.box {
+  padding-right:15px;
+  padding-left:15px;
+  .how-it-works {
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: $secondary-font-colour;
+    padding: .5em 1.5em 1.5em 1.5em;
+    margin: 0 0 1em 0;
+    h3.title {
+      color: $secondary-font-colour;
+      font-size:1.15em;
+      margin-bottom:1em;
+      span {
+        font-size:1.6em;
+      }
+    }
+    p {
+      margin:.5em 0 1em 0;
+      padding:0;
+    }
+    p.no-space {
+      margin:.5em 0 .4em 0;
+    }
+    ul {
+      margin:0 0 .5em 1em;
+      padding: 0 .5em;
+    }
+  }
+  .how-it-works1 {
+    background-image: -webkit-linear-gradient(left, #006699 0, #004970 100%);
+    background-image: -o-linear-gradient(left, #006699 0, #004970 100%);
+    background-image: linear-gradient(to right, #006699 0, #004970 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#004970', GradientType=0);
+  }
+
+  .how-it-works2 {
+    background-image: -webkit-linear-gradient(left, #ad3358 0, #980023 100%);
+    background-image: -o-linear-gradient(left, #ad3358 0, #980023 100%);
+    background-image: linear-gradient(to right, #ad3358 0, #980023 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad3358', endColorstr='#980023', GradientType=0);
+  }
+
+  .how-it-works3 {
+    background-image: -webkit-linear-gradient(left, #387e9d 0, #055f83 100%);
+    background-image: -o-linear-gradient(left, #387e9d 0, #055f83 100%);
+    background-image: linear-gradient(to right, #387e9d 0, #055f83 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#387e9d', endColorstr='#055f83', GradientType=0);
+  }
+}
+
+.space-below {
+  @include desktop {
+    margin-bottom: 1em;
+  }
+}
+
+.de-08 {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
