@@ -11,12 +11,15 @@ $mostly-black:      #242424;
 /* Colours */
 $dark-orange-grey:  #77716A;
 $dark-grey-orange:  #66625B;
+$dark-pink:         #AD3358;
 $medium-red:        #98002E;
 $dark-red:          #6D0112;
 $light-green:       #C8F19F;
-$dark-blue:         #0C6D96;
+$dark-mod-blue:     #387E9D;
+$dark-blue:         #006699;
 $darker-blue:       #0A5C7E;
 $very-dark-blue:    #0B6288;
+$even-darker-blue:  #004970;
 
 /* Typography */
 $open-sans-familiy:  'Open Sans', sans-serif;
@@ -33,6 +36,8 @@ $body-background:       $white;
 $header-background:     $dark-orange-grey;
 $header-slogan:         $dark-grey;
 $navbar-btn:            $mostly-black;
+$highlighted-bg-top:    $white;
+$highlighted-bg-bottom: $very-light-grey;
 $border-grey:           $very-light-grey;
 $sidebar-bg:            $mostly-white;
 $sidebar-bg-hover:      $very-light-grey;
@@ -46,3 +51,9 @@ $footer-btn-hover:      $mostly-white;
 $button-bg:             $dark-blue;
 $button-bg-hover:       $very-dark-blue;
 $button-border:         $darker-blue;
+$hiw1-left-colour:      $dark-blue;
+$hiw1-right-colour:     $even-darker-blue;
+$hiw2-left-colour:      $dark-pink;
+$hiw2-right-colour:     $medium-red;
+$hiw3-left-colour:      $dark-mod-blue;
+$hiw3-right-colour:     $dark-blue;
