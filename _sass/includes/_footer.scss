@@ -86,3 +86,8 @@
     }
   }
 }
+@include desktop {
+  #footer, .push {
+    height: 430px; /* .push must be the same height as .footer */
+  }
+}
