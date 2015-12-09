@@ -31,6 +31,12 @@
           max-width: 100%;
           height: auto !important;
         }
+        h2 {
+        	color: $theme-colour;
+        	font-weight: bold !important;
+          font-size: 1.1em;
+          line-height: 1.4;
+        }
         .caption {
           padding: 5%;
           text-align: center;
