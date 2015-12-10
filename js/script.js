@@ -320,47 +320,6 @@ jQuery(document).ready(function() {
   }
 
   // ----------------------------------------------------------------
-  // Plugin: jQuery Quicksand plugin
-  // @see: http://razorjack.net/quicksand/
-  // ----------------------------------------------------------------
-  if (jQuery('[data-js=quicksand]').length > 0) {
-    var initQuicksand = function() {
-      jQuery('[data-js=quicksand]').each(function() {
-        var quicksandTrigger = jQuery(this).find(jQuery(this).data('quicksand-trigger'));
-        var quicksandTarget = jQuery(jQuery(this).data('quicksand-target'));
-        var quicksandTargetData = quicksandTarget.clone();
-        var filterId = 'all';
-        var filteredData;
-
-        quicksandTrigger.click(function(e) {
-          filterId = jQuery(this).data('quicksand-fid');
-          filteredData = '';
-          quicksandTrigger.parents('li').removeClass('active');
-          jQuery(this).parents('li').addClass('active');
-
-          if (filterId === 'all') {
-            filteredData = quicksandTargetData.find('[data-quicksand-id]');
-          }
-          else {
-            filteredData = quicksandTargetData.find('[data-quicksand-tid="'+ filterId +'"]');
-          }
-
-          quicksandTarget.quicksand(filteredData,
-            {
-              duration: 600,
-              attribute: 'data-quicksand-id',
-              adjustWidth: 'auto',
-            }
-          ).addClass('quicksand-target');
-          e.preventDefault();
-        });
-      });
-    };
-    $.getScript("js/jquery-migrate-1.2.1.min.js");
-    jQuery().themeLoadPlugin(["quicksand/jquery.quicksand.js"], [], initQuicksand);
-  }
-
-  // ----------------------------------------------------------------
   // Plugin: Slider Revolution
   // @see: http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848
   // ----------------------------------------------------------------
@@ -535,8 +494,8 @@ jQuery(document).ready(function() {
   }
 
   // ----------------------------------------------------------------
-  // Plugin: OwlCarousel (carousel displays)
-  // @see: http://owlgraphic.com/owlcarousel/
+  // Plugin: MagnificPopup (Slide display on home page)
+  // @see: http://dimsemenov.com/plugins/magnific-popup/
   // ----------------------------------------------------------------
   if (jQuery('[data-toggle="magnific-popup"]').length > 0) {
     var initMagnificPopup = function() {
