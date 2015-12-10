@@ -15,7 +15,7 @@ jQuery(document).ready(function() {
   // Custom / Bootstrap onLoad functionality
   //
   // ****************************************************************
-  
+
   // ----------------------------------------------------------------
   // Search form show/hide
   // ----------------------------------------------------------------
@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
       $('html').removeClass('search-form-open');
     });
   }
-  
+
   // ----------------------------------------------------------------
   // colour switch - demo only
   // ----------------------------------------------------------------
@@ -45,7 +45,7 @@ jQuery(document).ready(function() {
     var cacheBuster = 3 * Math.floor(Math.random() * 6);
     jQuery('.colour-switcher a').removeClass('active');
     jQuery('.colour-switcher a.'+ c).addClass('active');
-    
+
     if (c !== defaultColour) {
       jQuery('#colour-scheme').attr('href','css/colour-'+ c +'.css?x='+ cacheBuster);
     }
@@ -53,7 +53,7 @@ jQuery(document).ready(function() {
       jQuery('#colour-scheme').attr('href', '#');
     }
   });
-  
+
   // ----------------------------------------------------------------
   // IE placeholders
   // ----------------------------------------------------------------
@@ -83,8 +83,8 @@ jQuery(document).ready(function() {
   // ----------------------------------------------------------------
   if (jQuery('[data-hover="dropdown"]').length > 0) {
     jQuery().themeLoadPlugin(["bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"], [], null, 'append');
-  }  
-  
+  }
+
   // ----------------------------------------------------------------
   // Bootstrap tooltip
   // @see: http://getbootstrap.com/javascript/#tooltips
@@ -96,8 +96,8 @@ jQuery(document).ready(function() {
       container: "body"
     });
   }
-  
-  // ----------------------------------------------------------------  
+
+  // ----------------------------------------------------------------
   // Bootstrap popover
   // @see: http://getbootstrap.com/javascript/#popovers
   // ----------------------------------------------------------------
@@ -109,19 +109,19 @@ jQuery(document).ready(function() {
       trigger: "hover"
     });
   }
-  
+
   // ----------------------------------------------------------------
   // Submenus
-  // ---------------------------------------------------------------- 
+  // ----------------------------------------------------------------
   jQuery('html').themeSubMenus();
-  
+
   // ----------------------------------------------------------------
   // allow any page element to set page class
   // ----------------------------------------------------------------
   jQuery('[data-page-class]').each(function() {
     jQuery('html').addClass(jQuery(this).data('page-class'));
   });
-  
+
   // ----------------------------------------------------------------
   // Detect Bootstrap fixed header
   // @see: http://getbootstrap.com/components/#navbar-fixed-top
@@ -129,7 +129,7 @@ jQuery(document).ready(function() {
   if (jQuery('.navbar-fixed-top').size() > 0) {
     jQuery('html').addClass('has-navbar-fixed-top');
   }
-  
+
   // ----------------------------------------------------------------
   // show hide for hidden header
   // ----------------------------------------------------------------
@@ -139,30 +139,30 @@ jQuery(document).ready(function() {
       var target = jQuery(this).attr('data-target');
       var targetState = jQuery(this).attr('data-target-state');
       var callback = jQuery(this).attr('data-callback');
-      
+
       //allows trigger link to say target is open & should be closed
       if (typeof targetState !== 'undefined' && targetState !== false) {
         state = targetState;
       }
-      
+
       if (state === undefined) {
         state = 'open';
       }
-      
+
       jQuery(target).toggleClass('show-hide-'+ state);
       jQuery(this).toggleClass(state);
-      
+
       if (callback && typeof(callback) === "function") {
         callback();
       }
     });
   });
-  
+
   // ****************************************************************
   // Third-party plugin intergration
-  // 
+  //
   // ****************************************************************
-  
+
   // ----------------------------------------------------------------
   // Plugin: Bootstrap switch integration
   // @see: http://www.bootstrap-switch.org/
@@ -173,7 +173,7 @@ jQuery(document).ready(function() {
     };
     jQuery().themeLoadPlugin(["bootstrap-switch/build/js/bootstrap-switch.min.js"], ["bootstrap-switch/build/css/bootstrap3/bootstrap-switch.min.css"], initBootstrapSwitch);
   }
-  
+
   // ----------------------------------------------------------------
   // Plugin: jPanel Menu
   // data-toggle=jpanel-menu must be present on .navbar-btn
@@ -183,7 +183,7 @@ jQuery(document).ready(function() {
   if(jQuery('[data-toggle=jpanel-menu]').length > 0) {
     var initjPMenu = function() {
       var jpanelMenuTrigger = jQuery('[data-toggle=jpanel-menu]');
-  
+
       jPM = jQuery.jPanelMenu({
         menu: jpanelMenuTrigger.data('target'),
         direction: jpanelMenuTrigger.data('direction'),
@@ -199,7 +199,7 @@ jQuery(document).ready(function() {
           jQuery('html').removeClass('jpanel-menu-open');
         }
       });
-    
+
       //jRespond settings
       var jRes = jRespond([
         {
@@ -208,7 +208,7 @@ jQuery(document).ready(function() {
           exit: 991
         }
       ]);
-      
+
       //turn jPanel Menu on/off as needed
       jRes.addFunc({
           breakpoint: 'small',
@@ -224,20 +224,7 @@ jQuery(document).ready(function() {
     };
     jQuery().themeLoadPlugin(["jPanelMenu/jquery.jpanelmenu.min.js", "jRespond/js/jRespond.js"], [], initjPMenu);
   }
-  
-  // ----------------------------------------------------------------
-  // Plugin: clingify (sticky navbar)
-  // @see: http://theroux.github.io/clingify/
-  // ----------------------------------------------------------------
-  if (jQuery('[data-toggle=clingify]').length > 0) {
-    var initClingify = function() {
-      jQuery('[data-toggle=clingify]').clingify({
-        breakpoint: 1010,
-      });
-    };
-    jQuery().themeLoadPlugin(["clingify/jquery.clingify.min.js"], ["clingify/clingify.css"], initClingify);
-  }
-  
+
   // ----------------------------------------------------------------
   // Plugin: flexslider
   // @see: http://www.woothemes.com/flexslider/
@@ -255,13 +242,13 @@ jQuery(document).ready(function() {
             slider.find('[data-animate-in]').each(function() {
               jQuery(this).css('visibility','hidden');
             });
-    
+
             //slide backgrounds
             slider.find('.slide-bg').each(function() {
               jQuery(this).css({'background-image': 'url('+ jQuery(this).data('bg-img') +')'});
               jQuery(this).css('visibility','visible').addClass('animated').addClass(jQuery(this).data('animate-in'));
             });
-            
+
             //animate in first slide
             slider.find('.slide').eq(1).find('[data-animate-in]').each(function() {
               jQuery(this).css('visibility','hidden');
@@ -283,7 +270,7 @@ jQuery(document).ready(function() {
             slider.find('.slide-bg').each(function() {
               jQuery(this).removeClass(jQuery(this).data('animate-in')).removeClass('animated').css('visibility','hidden');
             });
-            
+
             //hide next animate element so it can animate in
             slider.find('.slide').eq(slider.animatingTo + 1).find('[data-animate-in]').each(function() {
               jQuery(this).css('visibility','hidden');
@@ -294,7 +281,7 @@ jQuery(document).ready(function() {
             slider.find('.slide').find('[data-animate-in]').each(function() {
               jQuery(this).css('visibility','hidden');
             });
-            
+
             //animate in next slide
             slider.find('.slide').eq(slider.animatingTo + 1).find('[data-animate-in]').each(function() {
               if (jQuery(this).data('animate-delay')) {
@@ -310,12 +297,12 @@ jQuery(document).ready(function() {
                 }
               );
             });
-            
+
             $(window).trigger('resize');
-            
+
           }
         };
-        
+
         var sliderNav = jQuery(this).attr('data-slidernav');
         if (sliderNav !== 'auto') {
           sliderSettings = $.extend({}, sliderSettings, {
@@ -323,7 +310,7 @@ jQuery(document).ready(function() {
             controlsContainer: '.flexslider-wrapper'
           });
         }
-        
+
         jQuery('html').addClass('has-flexslider');
         jQuery(this).flexslider(sliderSettings);
         jQuery('.flexslider').resize(); //make sure height is right load assets loaded
@@ -331,7 +318,7 @@ jQuery(document).ready(function() {
     };
     jQuery().themeLoadPlugin(["flexslider/jquery.flexslider-min.js"], ["flexslider/flexslider.css"], initFlexslider);
   }
-  
+
   // ----------------------------------------------------------------
   // Plugin: jQuery Quicksand plugin
   // @see: http://razorjack.net/quicksand/
@@ -344,20 +331,20 @@ jQuery(document).ready(function() {
         var quicksandTargetData = quicksandTarget.clone();
         var filterId = 'all';
         var filteredData;
-        
+
         quicksandTrigger.click(function(e) {
           filterId = jQuery(this).data('quicksand-fid');
           filteredData = '';
           quicksandTrigger.parents('li').removeClass('active');
           jQuery(this).parents('li').addClass('active');
-          
+
           if (filterId === 'all') {
             filteredData = quicksandTargetData.find('[data-quicksand-id]');
           }
           else {
             filteredData = quicksandTargetData.find('[data-quicksand-tid="'+ filterId +'"]');
           }
-          
+
           quicksandTarget.quicksand(filteredData,
             {
               duration: 600,
@@ -372,7 +359,7 @@ jQuery(document).ready(function() {
     $.getScript("js/jquery-migrate-1.2.1.min.js");
     jQuery().themeLoadPlugin(["quicksand/jquery.quicksand.js"], [], initQuicksand);
   }
-  
+
   // ----------------------------------------------------------------
   // Plugin: Slider Revolution
   // @see: http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848
@@ -438,7 +425,7 @@ jQuery(document).ready(function() {
       initSliderRev
     );
   }
-  
+
   // ----------------------------------------------------------------
   // Plugin: Backstretch
   // @see: http://srobbin.com/jquery-plugins/backstretch/
@@ -452,12 +439,12 @@ jQuery(document).ready(function() {
           fade: 750,
           duration: 4000
         };
-    
+
         // Get images from element
         jQuery.each(backstretchEl.data('backstretch-imgs').split(','), function(k, img) {
           backstretchImgs[k] = img;
         });
-        
+
         // block level element
         if (backstretchEl.data('backstretch-target')) {
           backstretchTarget = backstretchEl.data('backstretch-target');
@@ -470,18 +457,18 @@ jQuery(document).ready(function() {
             }
           }
         }
-      
+
         if (backstretchImgs) {
           $('html').addClass('has-backstretch');
-          
+
           // Merge in any custom settings
           backstretchSettings = $.extend({}, backstretchSettings, backstretchEl.data());
           backstretchTarget.backstretch(backstretchImgs, backstretchSettings);
-          
+
           // add overlay
           if (backstretchEl.data('backstretch-overlay') !== false) {
             $('.backstretch').prepend('<div class="backstretch-overlay"></div>');
-            
+
             if (backstretchEl.data('backstretch-overlay-opacity')) {
               $('.backstretch').find('.backstretch-overlay').css('background', 'white').fadeTo(0, backstretchEl.data('backstretch-overlay-opacity'));
             }
@@ -491,7 +478,7 @@ jQuery(document).ready(function() {
     };
     jQuery().themeLoadPlugin(["backstretch/jquery.backstretch.min.js"], [], initBackstretch);
   }
-  
+
   // ----------------------------------------------------------------
   // Plugin: FitVids.js
   // @see: http://fitvidsjs.com/
@@ -510,7 +497,7 @@ jQuery(document).ready(function() {
     };
     jQuery().themeLoadPlugin(["fitvidsjs/jquery.fitvids.js"], [], initFitVids);
   }
-  
+
   // ----------------------------------------------------------------
   // Plugin: Isotope (blog grid & sorting)
   // @see: http://isotope.metafizzy.co/
@@ -522,17 +509,17 @@ jQuery(document).ready(function() {
       jQuery('[data-toggle=isotope-grid]').each(function() {
         var container = $(this),
             options = $(this).data('isotope-options');
-            
-        // Invoke isotope    
+
+        // Invoke isotope
         container.isotope(options);
-        
+
         // If imagesLoaded avaliable use it
         if (jQuery().imagesLoaded) {
           container.imagesLoaded( function() {
             container.isotope('layout');
           });
         }
-        
+
         $('body').addClass('has-isotope');
       });
     };
@@ -600,7 +587,7 @@ jQuery(document).ready(function() {
         startDragging : false,
         afterLazyLoad: false
       };
-      
+
       jQuery('[data-toggle="owl-carousel"]').each(function() {
         var owlCarouselSettings;
         var owlCarouselSettingsExtras = {};
@@ -645,7 +632,7 @@ jQuery(document).ready(function() {
         tLoading: 'Loading...',
         type: 'image'
       };
-      
+
       jQuery('[data-toggle="magnific-popup"]').each(function() {
         var magnificPopupSettings;
         var magnificPopupSettingsExtras = {};
@@ -659,12 +646,12 @@ jQuery(document).ready(function() {
     };
     jQuery().themeLoadPlugin(["magnific-popup/dist/jquery.magnific-popup.min.js"], ["magnific-popup/dist/magnific-popup.css"], initMagnificPopup);
   }
-  
+
 });
 
 // ****************************************************************
 // Custom jQuery extension functions
-// 
+//
 // ****************************************************************
 jQuery.fn.extend({
   //submenu dropdowns
@@ -673,12 +660,12 @@ jQuery.fn.extend({
     jQuery('ul.dropdown-menu [data-toggle=dropdown]', jQuery(this)).on('click', function(event) {
       event.preventDefault();
       event.stopPropagation();
-        
+
       // Toggle direct parent
       jQuery(this).parent().toggleClass('open');
     });
   },
-  
+
   // Load plugin
   // --------------------------------
   themeLoadPlugin: function(js, css, callback, placement) {
@@ -693,13 +680,13 @@ jQuery.fn.extend({
           $.each(css, function(index, value) {
             jQuery('head').prepend('<link href="' + PLUGINS_PATH + value + '" rel="stylesheet" type="text/css" />');
           });
-          
+
           if (callback && typeof(callback) === "function") {
             callback();
           }
         }
       };
-  
+
       if (placement === undefined) {
         $.each(js, function(index, value) {
           $.getScript(PLUGINS_PATH + value, internalCallback);
@@ -714,4 +701,3 @@ jQuery.fn.extend({
     }
   }
 });
-
