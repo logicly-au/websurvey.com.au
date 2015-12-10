@@ -428,34 +428,6 @@ jQuery(document).ready(function() {
   }
 
   // ----------------------------------------------------------------
-  // Plugin: Isotope (blog grid & sorting)
-  // @see: http://isotope.metafizzy.co/
-  // Also loads plugin: Imagesloaded (utility for Isotope plugin)
-  // @see: https://github.com/desandro/imagesloaded
-  // ----------------------------------------------------------------
-  if (jQuery('[data-toggle=isotope-grid]').length > 0) {
-    var initIsotope = function() {
-      jQuery('[data-toggle=isotope-grid]').each(function() {
-        var container = $(this),
-            options = $(this).data('isotope-options');
-
-        // Invoke isotope
-        container.isotope(options);
-
-        // If imagesLoaded avaliable use it
-        if (jQuery().imagesLoaded) {
-          container.imagesLoaded( function() {
-            container.isotope('layout');
-          });
-        }
-
-        $('body').addClass('has-isotope');
-      });
-    };
-    jQuery().themeLoadPlugin(["imagesloaded/imagesloaded.pkgd.min.js", "isotope/dist/isotope.pkgd.min.js"], [], initIsotope);
-  }
-
-  // ----------------------------------------------------------------
   // Plugin: Prism (code highlighting)
   // @see: http://prismjs.com/
   // ----------------------------------------------------------------
