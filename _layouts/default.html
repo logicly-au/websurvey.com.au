@@ -38,23 +38,24 @@
     #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
     </style>
   </head>
-{% include header.html %}
-<div role="main">
-  <div id="content">
-    <div class="container">
-      {{ content }}
+  <body class="page page-index-static" id="top">
+    <a href="#content" class="sr-only">Skip to content</a>
+    {% include header.html %}
+    <div role="main">
+      <div id="content">
+        <div class="container">
+          {{ content }}
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="push"></div>
-</div>
-{% include footer.html %}
-<!--Scripts -->
-<script src="/js/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="/js/bootstrap.min.js"></script>
-<!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
-<!--Custom scripts mainly used to trigger libraries/plugins -->
-<!-- script src="/js/script.min.js"></script -->
-<script src="/js/script.js"></script>
-</body>
+    {% include footer.html %}
+    <!--Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+    <!--Custom scripts mainly used to trigger libraries/plugins -->
+    <!-- script src="/js/script.min.js"></script -->
+    <script src="/js/script.js"></script>
+  </body>
 </html>
