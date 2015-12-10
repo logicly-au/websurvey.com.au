@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>{{ page.title }} - WebSurvey</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>{{ page.title }} - WebSurvey</title>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- @todo: fill with your company info or remove -->
-    <meta name="description" content="">
+    <meta name="description" content="Web Surveys">
+    <meta name="keywords" content="Web Survey Online Data Collection Analysis">
     <meta name="author" content="Themelize.me">
 
+    <!-- Stylesheets -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
     <link href="/css/main.css" rel="stylesheet">
-    <!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
-    <!--[if lt IE 9]>
-      <script src="/plugins/html5shiv/dist/html5shiv.js"></script>
-      <script src="/plugins/respond/respond.min.js"></script>
-    <![endif]-->
 
+    <!-- Favicon links -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -39,13 +36,17 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
-    <script src="/plugins/retina/js/retina-1.1.0.min.js"></script>
-  <!-- get jQuery from the google apis -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-    #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
-    </style>
+    <!--Scripts -->
+    <!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
+    <!--[if lt IE 9]>
+      <script src="/plugins/html5shiv/dist/html5shiv.js"></script>
+      <script src="/plugins/respond/respond.min.js"></script>
+    <![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!--Custom scripts mainly used to trigger libraries/plugins -->
+    <script src="/js/script.min.js"></script>
   </head>
   <body class="page page-index-static" id="top">
     <a href="#content" class="sr-only">Skip to content</a>
@@ -58,13 +59,5 @@
       </div>
     </div>
     {% include footer.html %}
-    <!--Scripts -->
-    <script src="/js/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="/js/bootstrap.min.js"></script>
-    <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
-    <!--Custom scripts mainly used to trigger libraries/plugins -->
-    <!-- script src="/js/script.min.js"></script -->
-    <script src="/js/script.js"></script>
   </body>
 </html>
