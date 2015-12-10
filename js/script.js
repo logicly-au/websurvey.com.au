@@ -428,14 +428,6 @@ jQuery(document).ready(function() {
   }
 
   // ----------------------------------------------------------------
-  // Plugin: Prism (code highlighting)
-  // @see: http://prismjs.com/
-  // ----------------------------------------------------------------
-  if (jQuery('code').length > 0) {
-    jQuery().themeLoadPlugin(["prism/prism.js"], ["prism/prism.css"]);
-  }
-
-  // ----------------------------------------------------------------
   // Plugin: MagnificPopup (Slide display on home page)
   // @see: http://dimsemenov.com/plugins/magnific-popup/
   // ----------------------------------------------------------------
