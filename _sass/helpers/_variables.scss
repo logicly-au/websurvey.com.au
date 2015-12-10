@@ -23,11 +23,14 @@ $even-darker-blue:  #004970;
 
 /* Typography */
 $open-sans-familiy:  'Open Sans', sans-serif;
+$font-awesome:       'FontAwesome';
+
 /* Font sizes */
 $primary-font-size:     14px;
 
 /* Default Styling */
 $primary-font:          $open-sans-familiy;
+$icon-font:             $font-awesome;
 $primary-font-colour:   $very-dark-grey;
 $secondary-font-colour: $white;
 $theme-colour:          $medium-red;
@@ -36,6 +39,9 @@ $body-background:       $white;
 $header-background:     $dark-orange-grey;
 $header-slogan:         $dark-grey;
 $navbar-btn:            $mostly-black;
+$nav-dropdown-bg:       $white;
+$nav-dropdown-border:   $mostly-white;
+$nav-mobile-font:       $medium-grey;
 $highlighted-bg-top:    $white;
 $highlighted-bg-bottom: $very-light-grey;
 $border-grey:           $very-light-grey;

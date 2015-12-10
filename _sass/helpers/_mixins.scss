@@ -30,6 +30,12 @@ $responsive-width:    768px;
           border-radius: $size + px;
 }
 
+@mixin rotating($angle){
+  -webkit-transform: rotate($angle + deg);
+     -moz-transform: rotate($angle + deg);
+          transform: rotate($angle + deg);
+}
+
 @mixin opacity($opacity) {
   opacity: $opacity;
   $opacity-ie: $opacity * 100;

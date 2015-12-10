@@ -85,6 +85,14 @@
         border-left: none;
       }
     }
+    a {
+      &:focus,
+      &:hover {
+        > img {
+          @include opacity(.8);
+        }
+      }
+    }
     .title {
       text-transform: uppercase;
       font-weight: bold;
@@ -95,9 +103,6 @@
         &:hover {
           color: $link-hover;
           text-decoration: none !important;
-          > img {
-            @include opacity(.8);
-          }
         }
       }
     }
