@@ -428,25 +428,6 @@ jQuery(document).ready(function() {
   }
 
   // ----------------------------------------------------------------
-  // Plugin: FitVids.js
-  // @see: http://fitvidsjs.com/
-  // ----------------------------------------------------------------
-  var selectors = [
-    "iframe[src*='player.vimeo.com']",
-    "iframe[src*='youtube.com']",
-    "iframe[src*='youtube-nocookie.com']",
-    "iframe[src*='kickstarter.com'][src*='video.html']",
-    "object",
-    "embed"
-  ];
-  if ($(this).find(selectors.join(',')).length > 0) {
-    var initFitVids = function() {
-      $('body').fitVids({ ignore: '.no-fitvids'});
-    };
-    jQuery().themeLoadPlugin(["fitvidsjs/jquery.fitvids.js"], [], initFitVids);
-  }
-
-  // ----------------------------------------------------------------
   // Plugin: Isotope (blog grid & sorting)
   // @see: http://isotope.metafizzy.co/
   // Also loads plugin: Imagesloaded (utility for Isotope plugin)
