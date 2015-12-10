@@ -164,17 +164,6 @@ jQuery(document).ready(function() {
   // ****************************************************************
 
   // ----------------------------------------------------------------
-  // Plugin: Bootstrap switch integration
-  // @see: http://www.bootstrap-switch.org/
-  // ----------------------------------------------------------------
-  if (jQuery('[data-toggle=switch]').length > 0) {
-    var initBootstrapSwitch = function() {
-      jQuery('[data-toggle=switch]').bootstrapSwitch();
-    };
-    jQuery().themeLoadPlugin(["bootstrap-switch/build/js/bootstrap-switch.min.js"], ["bootstrap-switch/build/css/bootstrap3/bootstrap-switch.min.css"], initBootstrapSwitch);
-  }
-
-  // ----------------------------------------------------------------
   // Plugin: jPanel Menu
   // data-toggle=jpanel-menu must be present on .navbar-btn
   // @todo - allow options to be passed via data- attr
