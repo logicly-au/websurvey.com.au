@@ -1,0 +1,68 @@
+.sidebar {
+  margin: 2em 0 1em 0;
+  @include desktop {
+    margin-top: 1.5em;
+  }
+  .section-menu ul.nav-list {
+    padding: 2em 0;
+    margin-left: 0;
+    @include desktop {
+      border-right: 1px solid $border-grey;
+    }
+    li {
+      a {
+        color: $sidebar-font;
+        font-weight: bold;
+        font-size: 18px;
+        @include roundedCorners(0);
+        border: 1px solid $border-grey;
+        border-top: none;
+        margin: 0 -1px 0 3px;
+        @include boxShadow(1, $body-background);
+        background: $sidebar-bg;
+        text-shadow: none;
+        padding: 8px 15px;
+        position: relative;
+        &:hover,
+        &:focus {
+          background: $sidebar-bg-hover;
+          i {
+            color: $theme-colour;
+          }
+        }
+        i {
+          font-size: 22px;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          color: $sidebar-bg-hover;
+          @include rotating(90);
+          @include desktop {
+            right: 10px;
+            @include rotating(0);
+          }
+        }
+        small {
+          display: block;
+          font-weight: normal;
+          color: rgba(27, 27, 27, 0.5);
+        }
+      }
+      a.first {
+        border-top: 1px solid $border-grey;
+      }
+    }
+    li.active > a {
+      border-left: 4px solid $theme-colour;
+      color: $theme-colour;
+      margin: 0 -1px 0 0;
+      background: $body-background;
+      @include desktop {
+        border-right-color: $body-background;
+      }
+      i {
+        color: $theme-colour;
+      }
+    }
+  }
+}

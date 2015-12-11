@@ -1,0 +1,194 @@
+/* Top image and slogans */
+#highlighted {
+  @include linearGradientTB($highlighted-bg-top, $highlighted-bg-bottom);
+  width: 200%;
+  margin-left: -25%;
+  border-top: none;
+  height: 444px;
+  @include tablet {
+    height: 445px;
+  }
+  @include desktop {
+    height: 227px;
+  }
+  @include large {
+    height: 246px;
+  }
+  .inner {
+    background: url(../img/bg_diamond.png) left bottom repeat-x;
+    border-bottom: 1px solid rgba(27, 27, 27, 0.2);
+    @include transitionOut(0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    @include responsive {
+      border-bottom: 0;
+    }
+    .btn-lg {
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.33;
+      @include roundedCorners(2);
+    }
+    .flexslider {
+      background: transparent;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      border: none;
+      @include roundedCorners(0);
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      .slide {
+        overflow: hidden;
+        -webkit-transform: translateZ(0);
+        img {
+          width: auto;
+          display: inline;
+          max-width: 100%;
+          height: auto !important;
+        }
+        h2 {
+        	color: $theme-colour;
+        	font-weight: bold !important;
+          font-size: 1.1em;
+          line-height: 1.4;
+          margin-top: 0;
+        }
+        .caption {
+          padding: 5%;
+          text-align: center;
+          @include desktop {
+            padding: 5% 0;
+          }
+          @include tablet {
+            text-align: left;
+          }
+          .btn {
+            margin: 0;
+          }
+        }
+      }
+      .slides {
+        > .slide {
+          display: none;
+          -webkit-backface-visibility: hidden;
+        }
+      }
+    }
+  }
+  &::after,
+  &::before {
+    @include clearFix;
+  }
+}
+
+/* For the animation of the home slides */
+@for $i from 1 through 8 {
+  .de-0#{$i} {
+    @include animationDelay(#{$i / 10});
+  }
+}
+
+/* List of features */
+.block.features {
+  .feature {
+    text-align: center;
+    margin-bottom: 2em;
+    @include tablet {
+      margin-bottom: .5em;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    @include desktop {
+      border-left: 2px solid $border-grey;
+    }
+    &:first-child {
+      @include desktop {
+        border-left: none;
+      }
+    }
+    a {
+      &:focus,
+      &:hover {
+        > img {
+          @include opacity(.8);
+        }
+      }
+    }
+    .title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.3em;
+      a {
+        color: $theme-colour;
+        &:focus,
+        &:hover {
+          color: $link-hover;
+          text-decoration: none !important;
+        }
+      }
+    }
+    img {
+      margin-bottom:1em;
+    }
+    p {
+      @include desktop {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+/* Why Websurvey */
+.box {
+  padding: 0 15px;
+  .how-it-works {
+    border: none;
+    @include roundedCorners(4);
+    color: $secondary-font-colour;
+    padding: .5em 1.5em 1.5em 1.5em;
+    margin: 0 0 1em 0;
+    @include desktop {
+      min-height: 250px;
+    }
+    h3.title {
+      color: $secondary-font-colour;
+      font-size:1.15em;
+      margin-bottom:1em;
+      text-transform: uppercase;
+      font-weight: bold;
+      span {
+        font-size:1.6em;
+      }
+    }
+    p {
+      margin:.5em 0 1em 0;
+      padding:0;
+    }
+    p.no-space {
+      margin:.5em 0 .4em 0;
+    }
+    ul {
+      margin:0 0 .5em 1em;
+      padding: 0 .5em;
+    }
+  }
+  .how-it-works1 {
+    @include linearGradientLR($hiw1-left-colour, $hiw1-right-colour);
+  }
+
+  .how-it-works2 {
+    @include linearGradientLR($hiw2-left-colour, $hiw2-right-colour);
+  }
+
+  .how-it-works3 {
+    @include linearGradientLR($hiw3-left-colour, $hiw3-right-colour);
+  }
+}
+
+.space-below {
+  @include desktop {
+    margin-bottom: 1em;
+  }
+}

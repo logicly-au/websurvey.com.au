@@ -1,0 +1,65 @@
+/* Shades */
+$white:             #FFFFFF;
+$mostly-white:      #F8F8F8;
+$very-light-grey:   #E6E6E6;
+$light-grey:        #CCCCCC;
+$medium-grey:       #BABABA;
+$dark-grey:         #888888;
+$darker-grey:       #494949;
+$very-dark-grey:    #333333;
+$mostly-black:      #242424;
+/* Colours */
+$dark-orange-grey:  #77716A;
+$dark-grey-orange:  #66625B;
+$dark-pink:         #AD3358;
+$medium-red:        #98002E;
+$dark-red:          #6D0112;
+$light-green:       #C8F19F;
+$dark-mod-blue:     #387E9D;
+$dark-blue:         #006699;
+$darker-blue:       #0A5C7E;
+$very-dark-blue:    #0B6288;
+$even-darker-blue:  #004970;
+
+/* Typography */
+$open-sans-familiy:  'Open Sans', sans-serif;
+$font-awesome:       'FontAwesome';
+
+/* Font sizes */
+$primary-font-size:     14px;
+
+/* Default Styling */
+$primary-font:          $open-sans-familiy;
+$icon-font:             $font-awesome;
+$primary-font-colour:   $very-dark-grey;
+$secondary-font-colour: $white;
+$theme-colour:          $medium-red;
+$link-hover:            $dark-red;
+$body-background:       $white;
+$header-background:     $dark-orange-grey;
+$header-slogan:         $dark-grey;
+$navbar-btn:            $mostly-black;
+$nav-dropdown-bg:       $white;
+$nav-dropdown-border:   $mostly-white;
+$nav-mobile-font:       $medium-grey;
+$highlighted-bg-top:    $white;
+$highlighted-bg-bottom: $very-light-grey;
+$border-grey:           $very-light-grey;
+$sidebar-bg:            $mostly-white;
+$sidebar-bg-hover:      $very-light-grey;
+$sidebar-font:          $darker-grey;
+$footer-background:     $dark-grey-orange;
+$footer-text-colour:    $light-grey;
+$footer-hover-colour:   $medium-grey;
+$footer-success-colour: $light-green;
+$footer-btn-bg:         $very-light-grey;
+$footer-btn-hover:      $mostly-white;
+$button-bg:             $dark-blue;
+$button-bg-hover:       $very-dark-blue;
+$button-border:         $darker-blue;
+$hiw1-left-colour:      $dark-blue;
+$hiw1-right-colour:     $even-darker-blue;
+$hiw2-left-colour:      $dark-pink;
+$hiw2-right-colour:     $medium-red;
+$hiw3-left-colour:      $dark-mod-blue;
+$hiw3-right-colour:     $dark-blue;

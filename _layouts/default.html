@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>{{ page.title }} - WebSurvey</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>{{ page.title }} - WebSurvey</title>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- @todo: fill with your company info or remove -->
-    <meta name="description" content="">
+    <meta name="description" content="Web Surveys">
+    <meta name="keywords" content="Web Survey Online Data Collection Analysis">
     <meta name="author" content="Themelize.me">
-    <!-- Bootstrap CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
-    <!-- Plugin: animate.css (animated effects) - http://daneden.github.io/animate.css/ -->
-    <link href="/plugins/animate/animate.css" rel="stylesheet">
-    <!-- carousel stylesheet  http://benschwarz.github.io/gallery-css -->
-    <link href="/css/gallery.css" rel="stylesheet">
-    <!-- Plugin: flag icons - http://lipis.github.io/flag-icon-css/ -->
-    <link href="/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-    <!-- Theme style -->
-    <link href="/css/theme-style.min.css" rel="stylesheet">
-    <!--Your custom colour override-->
-     <link href="/css/colour-red.css" id="colour-scheme" rel="stylesheet">
-    <!-- Your custom override -->
-    <link href="/css/custom-style.css" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet">
+
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="icon" href="/img/favicons/safari-pinned-tab.svg">
+    <meta name="theme-color" content="#98002e">
+    <meta name="msapplication-TileColor" content="#98002e">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Scripts -->
     <!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
     <!--[if lt IE 9]>
-    <script src="/plugins/html5shiv/dist/html5shiv.js"></script>
-    <script src="/plugins/respond/respond.min.js"></script>
+      <script src="/plugins/html5shiv/dist/html5shiv.js"></script>
+      <script src="/plugins/respond/respond.min.js"></script>
     <![endif]-->
-    <!-- Le fav and touch icons - @todo: fill with your icons or remove -->
-    <!-- link rel="shortcut icon" href="/img/icons/favicon.png" -->
-    <!-- link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/icons/114x114.png" -->
-    <!-- link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/icons/72x72.png" -->
-    <!-- link rel="apple-touch-icon-precomposed" href="/img/icons/default.png" -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
-    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
-    <script src="/plugins/retina/js/retina-1.1.0.min.js"></script>
-  <!-- get jQuery from the google apis -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-    #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
-    </style>
+    <script src="/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!--Custom scripts mainly used to trigger libraries/plugins -->
+    <script src="/js/script.min.js"></script>
   </head>
-{% include header.html %}
-<div role="main">
-{{ content }}
-</div>
-{% include footer.html %}
-<!--Scripts -->
-<script src="/js/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="/js/bootstrap.min.js"></script>
-<!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
-<!--Custom scripts mainly used to trigger libraries/plugins -->
-<!-- script src="/js/script.min.js"></script -->
-<script src="/js/script.js"></script>
-</body>
+  <body class="page page-index-static" id="top">
+    <a href="#content" class="sr-only">Skip to content</a>
+    {% include header.html %}
+    <div role="main">
+      <div id="content">
+        <div class="container">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
 </html>

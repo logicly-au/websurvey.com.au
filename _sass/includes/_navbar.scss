@@ -1,0 +1,296 @@
+/* navigation menu styling for desktop */
+#navigation {
+  @include desktop {
+      .navbar-btn {
+        display: none !important;
+      }
+      .navbar-collapse {
+        display: block !important;
+        float: left;
+        clear: both;
+        width:100%;
+        background: $header-background;
+        border-bottom: solid 4px $theme-colour;
+        -webkit-border-radius: 3px 3px 0 0;
+        -moz-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
+        &::after,
+        &::before {
+          @include clearFix;
+        }
+      .navbar-nav  {
+        float: none;
+        >li>a {
+          font-size: 0.86em;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 5px 15px;
+          margin: 0;
+          border: 1px solid transparent;
+          border-top: 3px solid transparent;
+          @include transitionOut(0.3);
+          color: $secondary-font-colour;
+          &:hover,
+          &:focus {
+            color: rgba(255, 255, 255, 0.8);
+            background-color: transparent;
+          }
+        }
+        >li.home-link a {
+          padding: 0;
+          i {
+            color: $secondary-font-colour;
+            font-size: 20px;
+            padding: 5px 15px;
+          }
+          &:hover i,
+          &:focus i  {
+            color: $theme-colour;
+          }
+        }
+        /* faq dropdown menu */
+        >li.dropdown a {
+          &:hover,
+          &:focus {
+            color: $primary-font-colour;
+            background-color: $nav-dropdown-bg;
+          }
+        }
+        li.dropdown.open {
+          > .dropdown-toggle {
+            background-color: $nav-dropdown-bg;
+          }
+          > a {
+            color: $primary-font-colour;
+            border-top: 3px solid $theme-colour;
+          }
+          .dropdown-menu {
+            margin-top: -1px !important;
+            padding: 4px;
+            @include roundedCorners(0);
+            left: auto;
+            border: 1px solid $nav-dropdown-border;
+            border-bottom-width: 2px;
+            font-size: 12px;
+            border-bottom-color: $theme-colour;
+            left: auto;
+            min-width: 250px;
+            background: $nav-dropdown-bg;
+            position: absolute;
+            li {
+              border-left: none;
+              border-right: none;
+              border-bottom: none;
+              float: none;
+              a.menu-item {
+                color: $primary-font-colour;
+                margin: 0;
+                padding: 8px 15px !important;
+                @include roundedCorners(0);
+                @include linearGradientTB($nav-dropdown-bg, $nav-dropdown-border);
+                border-bottom: 1px solid $border-grey;
+                &:hover,
+                &:focus {
+                  color: $primary-font-colour;
+                  border-bottom-color: $border-grey;
+                  @include linearGradientTB($highlighted-bg-top, $highlighted-bg-bottom);
+                  background-repeat: repeat-x;
+                  text-decoration: none;
+                  &::before {
+                    color: $theme-colour;
+                  }
+                }
+                &::before {
+                  font-family: $icon-font;
+                  font-size: 12px;
+                  color: rgba(27, 27, 27, 0.6);
+                  width: 30px;
+                  height: 30px;
+                  content: $fa-var-angle-right;
+                  padding-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* navigation menu styling for touch devices */
+
+/* Hamburger menu button */
+#navigation {
+  .navbar-btn {
+    font-size: 18px;
+    color: $secondary-font-colour;
+    background: $navbar-btn;
+    padding: 0;
+    @include roundedCorners(3);
+    display: block;
+    height: 32px;
+    width: 32px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    float: right;
+    font-size: 22px;
+    line-height: 28px;
+    &:focus {
+      color: $secondary-font-colour;
+    }
+    &:hover {
+      background: $theme-colour;
+    }
+    @include tablet {
+      margin-top: 10px;
+    }
+    .fa {
+      vertical-align: top;
+      display: block;
+      line-height: 1;
+      margin: 5px 0 0 0;
+    }
+  }
+  .navbar-btn.open {
+    background: $theme-colour;
+  }
+}
+
+@include tablet {
+  .navbar-collapse.collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+    display: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+/* Navigation panel for touch devices */
+#jPanelMenu-menu.navbar-collapse {
+  background: $header-background url(../img/bg_noise-2.png) repeat left top;
+  padding: 0;
+  max-height: none;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  margin: 0;
+  height: 100% !important;
+  display: block !important;
+  @include desktop {
+    display: none;
+  }
+  ul.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: none;
+    li {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      background: none;
+      float: none;
+      a {
+        padding: 10px 20px;
+        margin: 0;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $nav-mobile-font;
+        &:hover,
+        &:focus {
+          background: $navbar-btn;
+          color: $secondary-font-colour;
+        }
+      }
+    }
+    li.home-link {
+      display: block;
+      a {
+        background-color: $navbar-btn;
+        &:link {
+          padding: 0;
+          margin: 0;
+        }
+        &:focus,
+        &:hover {
+          background: transparent;
+          i {
+            color: $secondary-font-colour;
+          }
+        }
+        i {
+          margin: 0;
+          display: block;
+          text-align: center;
+          color: rgba(255,255,255,0.6);
+          font-size: 25px;
+          padding: 16px 20px;
+        }
+      }
+    }
+    /* faq dropdown menu */
+    li.dropdown.open {
+      > .dropdown-menu {
+        display: block !important;
+      }
+      > .dropdown-toggle {
+        background: $navbar-btn;
+        color: $secondary-font-colour;
+      }
+    }
+    li.dropdown ul.dropdown-menu {
+      background: none;
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      border-bottom: none;
+      color: rgba(255, 255, 255, 0.6);
+      position: relative;
+      float: none !important;
+      left: 0;
+      li {
+        border-top: none;
+        a.menu-item {
+          padding: 8px 20px !important;
+          margin: 0;
+          background: lighten($navbar-btn, 10%);
+          border-bottom: none;
+          text-transform: none;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 12px;
+          display: block;
+          float: none;
+          line-height: 20px;
+          &:hover,
+          &:focus {
+            background: lighten($navbar-btn, 5%);
+            border-bottom-color: rgba(255, 255, 255, 0.16);
+            color: $secondary-font-colour;
+            text-decoration: none;
+            &::before {
+              color: $theme-colour;
+            }
+          }
+          &::before {
+            font-family: $icon-font;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            width: 30px;
+            height: 30px;
+            content: $fa-var-angle-right;
+            padding: 0 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

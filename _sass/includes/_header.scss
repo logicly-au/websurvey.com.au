@@ -1,0 +1,64 @@
+#navigation {
+  &::after,
+  &::before {
+    @include clearFix;
+  }
+  .header-upper {
+    background: $theme-colour;
+    position: relative;
+    padding: 5px 0;
+  }
+  .header {
+    height: auto;
+    padding: 20px 0 0px 0;
+    /* Top nav logo, slogan and contact */
+    .navbar {
+      margin-bottom: 0;
+      .logo-box {
+        @include desktop {
+          margin-bottom: 2em;
+        }
+        .navbar-brand {
+          padding: 0;
+          margin: 6px 0 0 0;
+          height: auto;
+          h1 {
+            margin: 0;
+          }
+          &:hover>h1>img,
+          &:focus>h1>img {
+            @include opacity(0.8);
+          }
+        }
+        .slogan {
+          color: $header-slogan;
+          margin: 15px 0 10px .5em;
+          @include desktop {
+            margin: 20px 0 0 1em;
+          }
+          @include tablet {
+            float: left;
+            margin: 20px 0 0 1em;
+            padding: 12px 0 8px 1em;
+            border-left: 1px solid $border-grey;
+          }
+        }
+      }
+      .contact-icon-box {
+        display: none;
+        @include desktop {
+          display: block;
+          font-size: 1.8em;
+          color: $theme-colour;
+          line-height: 26px;
+          margin-top: 20px;
+          float: right;
+          span {
+            font-size: 0.6em;
+            font-weight:bold;
+          }
+        }
+      }
+    }
+  }
+}
