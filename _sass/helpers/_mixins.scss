@@ -1,5 +1,12 @@
+$large-screen:       1200px;
 $desktop-width:       992px;
 $responsive-width:    768px;
+
+@mixin large {
+  @media (min-width: #{$large-screen}) {
+    @content;
+  }
+}
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
@@ -24,16 +31,35 @@ $responsive-width:    768px;
   display: table;
 }
 
-@mixin roundedCorners($size){
+@mixin roundedCorners($size) {
   -webkit-border-radius: $size + px;
      -moz-border-radius: $size + px;
           border-radius: $size + px;
+}
+
+@mixin boxShadow($size, $colour) {
+  -webkit-box-shadow: $size + px $size + px $size + px $colour;
+     -moz-box-shadow: $size + px $size + px $size + px $colour;
+          box-shadow: $size + px $size + px $size + px $colour;
 }
 
 @mixin rotating($angle){
   -webkit-transform: rotate($angle + deg);
      -moz-transform: rotate($angle + deg);
           transform: rotate($angle + deg);
+}
+
+@mixin transitionOut($time) {
+  -webkit-transition: all $time + s ease-out;
+     -moz-transition: all $time + s ease-out;
+       -o-transition: all $time + s ease-out;
+          transition: all $time + s ease-out;
+}
+
+@mixin animationDelay($time) {
+  -webkit-animation-delay: $time + s;
+     -moz-animation-delay: $time + s;
+          animation-delay: $time + s;
 }
 
 @mixin opacity($opacity) {

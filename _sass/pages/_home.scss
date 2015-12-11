@@ -1,12 +1,29 @@
 /* Top image and slogans */
 #highlighted {
   @include linearGradientTB($highlighted-bg-top, $highlighted-bg-bottom);
-  border-bottom: 1px solid rgba(27, 27, 27, 0.2);
+  width: 200%;
+  margin-left: -25%;
   border-top: none;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  height: 444px;
+  @include tablet {
+    height: 445px;
+  }
+  @include desktop {
+    height: 227px;
+  }
+  @include large {
+    height: 246px;
+  }
   .inner {
     background: url(../img/bg_diamond.png) left bottom repeat-x;
+    border-bottom: 1px solid rgba(27, 27, 27, 0.2);
+    @include transitionOut(0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    @include responsive {
+      border-bottom: 0;
+    }
     .btn-lg {
       padding: 10px 16px;
       font-size: 18px;
@@ -36,6 +53,7 @@
         	font-weight: bold !important;
           font-size: 1.1em;
           line-height: 1.4;
+          margin-top: 0;
         }
         .caption {
           padding: 5%;
@@ -51,9 +69,11 @@
           }
         }
       }
-      .slides > .slide {
-        display: none;
-        -webkit-backface-visibility: hidden;
+      .slides {
+        > .slide {
+          display: none;
+          -webkit-backface-visibility: hidden;
+        }
       }
     }
   }
@@ -63,12 +83,15 @@
   }
 }
 
+/* For the animation of the home slides */
+@for $i from 1 through 8 {
+  .de-0#{$i} {
+    @include animationDelay(#{$i / 10});
+  }
+}
+
 /* List of features */
 .block.features {
-  @include desktop {
-    margin-bottom:1em;
-  }
-
   .feature {
     text-align: center;
     margin-bottom: 2em;
@@ -168,9 +191,4 @@
   @include desktop {
     margin-bottom: 1em;
   }
-}
-
-.de-08 {
-  animation-delay: 0.8s;
-  -webkit-animation-delay: 0.8s;
 }

@@ -25,7 +25,10 @@
           text-transform: uppercase;
           font-weight: bold;
           padding: 5px 15px;
-          margin: 1px;
+          margin: 0;
+          border: 1px solid transparent;
+          border-top: 3px solid transparent;
+          @include transitionOut(0.3);
           color: $secondary-font-colour;
           &:hover,
           &:focus {
@@ -59,7 +62,7 @@
           }
           > a {
             color: $primary-font-colour;
-            border-top: 1px solid $theme-colour;
+            border-top: 3px solid $theme-colour;
           }
           .dropdown-menu {
             margin-top: -1px !important;

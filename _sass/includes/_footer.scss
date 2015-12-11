@@ -67,7 +67,7 @@
       padding: 15px 5px;
       &:hover>img,
       &:focus>img {
-        opacity: 0.8;
+        @include opacity(0.8);
       }
     }
     .list-inline {

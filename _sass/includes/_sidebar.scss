@@ -1,7 +1,7 @@
 .sidebar {
   margin: 2em 0 1em 0;
   @include desktop {
-    margin: 0;
+    margin-top: 1.5em;
   }
   .section-menu ul.nav-list {
     padding: 2em 0;
@@ -12,15 +12,13 @@
     li {
       a {
         color: $sidebar-font;
-        color: rgba(27, 27, 27, 0.7);
-        @include roundedCorners(0);
         font-weight: bold;
         font-size: 18px;
+        @include roundedCorners(0);
         border: 1px solid $border-grey;
         border-top: none;
         margin: 0 -1px 0 3px;
-        -webkit-box-shadow: 1px 1px 1px #ffffff;
-        box-shadow: 1px 1px 1px #ffffff;
+        @include boxShadow(1, $body-background);
         background: $sidebar-bg;
         text-shadow: none;
         padding: 8px 15px;
