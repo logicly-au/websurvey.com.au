@@ -211,7 +211,7 @@ jQuery(document).ready(function() {
           }
       });
     };
-    jQuery().themeLoadPlugin(["jPanelMenu/jquery.jpanelmenu.min.js", "jRespond/js/jRespond.js"], [], initjPMenu);
+    jQuery().themeLoadPlugin(["jPanelMenu/jquery.jpanelmenu.js", "jRespond/js/jRespond.js"], [], initjPMenu);
   }
 
   // ----------------------------------------------------------------
