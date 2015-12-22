@@ -76,6 +76,7 @@
     .footer-menu {
       float: left !important;
       margin:.5em 0 0 .2em;
+      padding: 15px 5px;
       @include desktop {
         float: right !important;
         margin-top:0;
