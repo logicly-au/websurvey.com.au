@@ -75,7 +75,7 @@ $responsive-width:    768px;
   background: -o-linear-gradient(left,  $left 0%,$right 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(left,  $left 0%,$right 100%); /* IE10+ */
   background: linear-gradient(to right,  $left 0%,$right 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$left, endColorstr=$right,GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006699', endColorstr='#004970',GradientType=0 ); /* IE6-9 */
 }
 
 @mixin linearGradientTB($top, $bottom){
@@ -86,5 +86,5 @@ $responsive-width:    768px;
   background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
   background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#E6E6E6',GradientType=0 ); /* IE6-9 */
 }
