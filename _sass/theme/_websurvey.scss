@@ -44,6 +44,7 @@ p {
   color: $secondary-font-colour;
   background-color: $button-bg;
   border-color: $button-border;
+  margin: 1em 0;
   &:hover,
   &:focus,
   &:active {
@@ -63,4 +64,17 @@ p {
 .description {
 	border-bottom: 2px solid $border-grey;
 	margin-bottom:1em;
+}
+
+.sd-map a {
+  img {
+    width: 401px;
+    height: 210px;
+  }
+  &:focus,
+  &:hover {
+    > img {
+      @include opacity(.8);
+    }
+  }
 }
