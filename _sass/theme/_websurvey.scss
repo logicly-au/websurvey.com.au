@@ -35,7 +35,9 @@ p {
 }
 
 /* Default buttons */
-[class^='btn'] {
+[class^='btn'],
+input[type="button"],
+input[type="submit"] {
   @include roundedCorners(4);
   font-weight:bold;
 }
