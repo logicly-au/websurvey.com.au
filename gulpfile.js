@@ -39,7 +39,7 @@ gulp.task('scripts', function() {
   // Build main.min.js from all js files
   return gulp.src(srcJs)
     .pipe(sourcemaps.init())
-    .pipe(order(["**/jquery.min.js"]))
+    .pipe(order(["**/jquery.js"]))
     .pipe(concat('ws-main.js'))
     .pipe(gulp.dest(dstJs))
     .pipe(uglify())
