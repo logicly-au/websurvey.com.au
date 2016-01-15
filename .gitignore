@@ -6,6 +6,6 @@ _site/
 .travis/deploy_key
 css/ws-main.css
 css/ws-main.css.min.map
-js/ws-main.js
-js/ws-main.js.min.map
+minjs/ws-main.js
+minjs/ws-main.js.min.map
 

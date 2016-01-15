@@ -16,7 +16,7 @@ var srcCss  = allFiles('_sass', 'scss'),
     srcJs   = allFiles('js', 'js'),
     srcImg  = allFiles('img', '*');
 
-var dstJs  = 'js';
+var dstJs  = 'minjs';
 var dstCss = 'css';
 var dstImg = 'img';
 
