@@ -132,6 +132,8 @@
     }
     img {
       margin-bottom:1em;
+      width: 95px;
+      height: 95px;
     }
     p {
       @include desktop {
