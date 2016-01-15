@@ -68,15 +68,18 @@ input[type="submit"] {
 	margin-bottom:1em;
 }
 
-.sd-map a {
-  img {
-    width: 401px;
-    height: 210px;
-  }
-  &:focus,
-  &:hover {
-    > img {
-      @include opacity(.8);
+.sd-map {
+  text-align: center;
+  a {
+    img {
+      width: 100%;
+      height: 100%;
     }
-  }
+    &:focus,
+    &:hover {
+      > img {
+        @include opacity(.8);
+      }
+    }
+}
 }
