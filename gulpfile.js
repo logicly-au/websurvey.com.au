@@ -16,10 +16,9 @@ var srcCss  = allFiles('_sass', 'scss'),
     srcJs   = allFiles('js', 'js'),
     srcImg  = allFiles('img', '*');
 
-var webDir = 'public';
-var dstJs  = webDir + '/js';
-var dstCss = webDir + '/css';
-var dstImg = webDir + '/img';
+var dstJs  = 'js';
+var dstCss = 'css';
+var dstImg = 'img';
 
 function allFiles(root, ext)    { return root + '/**/*.' + ext }
 
