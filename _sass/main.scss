@@ -1,0 +1,25 @@
+/* External stylesheets */
+@import "vendors/animate";
+@import "vendors/bootstrap";
+@import "vendors/font-awesome";
+@import "vendors/gallery";
+@import "vendors/mailchimp";
+
+/* Helpers needed for other files */
+@import "helpers/variables";
+@import "helpers/mixins";
+
+/* Base styling */
+@import "base/typography";
+
+/* Theme */
+@import "theme/websurvey";
+
+/* Includes */
+@import "includes/footer";
+@import "includes/header";
+@import "includes/navbar";
+@import "includes/sidebar";
+
+/* Individual pages */
+@import "pages/home";
