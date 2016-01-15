@@ -4,5 +4,8 @@ node_modules/
 _site/
 .sass-cache/
 .travis/deploy_key
-public/
+public/css/ws-main.css
+public/css/ws-main.css.min.map
+public/js/ws-main.js
+public/js/ws-main.js.min.map
 
