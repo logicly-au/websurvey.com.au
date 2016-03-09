@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1
 before_script:
-- pip install html5validator
+- pip install --user html5validator
 - npm install a11y 
 script: ./script/cibuild
 branches:
