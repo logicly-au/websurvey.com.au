@@ -3,7 +3,7 @@ rvm:
 - 2.1
 before_script:
 - pip install --user html5validator
-- npm install --user ally 
+- npm install --user a11y 
 script: ./script/cibuild
 branches:
   only:
