@@ -1,0 +1,36 @@
+<config>
+  <dataSource type="CSV">
+    <filename>../data.csv</filename>
+  </dataSource>
+  <defaultSlice>
+    <axes>
+      <axis name="rows">
+        <hierarchy sort="asc">
+          <dimensionName>[Country]</dimensionName>
+          <hierarchyName>[Country].[Country]</hierarchyName>
+        </hierarchy>
+        <hierarchy>
+          <dimensionName>[Measures]</dimensionName>
+          <hierarchyName>[Measures]</hierarchyName>
+        </hierarchy>
+      </axis>
+      <axis name="columns">
+        <hierarchy sort="asc">
+          <dimensionName>[Color]</dimensionName>
+          <hierarchyName>[Color].[Color]</hierarchyName>
+        </hierarchy>
+      </axis>
+    </axes>
+    <hierarchies/>
+    <measures>
+      <measure aggregation="sum">[Measures].[Price]</measure>
+      <measure aggregation="sum">[Measures].[Discount]</measure>
+    </measures>
+  </defaultSlice>
+  <conditions>
+    <condition measure="[Measures].[Discount]">
+      <![CDATA[if(AND(#value > 2000, #value < 4000), 'trueStyle')]]>
+      <trueStyle><![CDATA[{"backgroundColor":"0xff9966","fontSize":"13","fontFamily":"Tahoma","color":"0xffffff"}]]></trueStyle>
+    </condition>
+  </conditions>
+</config>
