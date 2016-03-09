@@ -6,7 +6,7 @@ jdk:
 before_script:
   - pip install --user html5validator
   - npm install a11y
-  - gem install html-proofer
+#  - gem install html-proofer
 script: ./script/cibuild
 branches:
   only:
