@@ -5,7 +5,8 @@ jdk:
   - oraclejdk8
 before_script:
   - pip install --user html5validator
-  - npm install a11y 
+  - npm install a11y
+  - bundle install htmlproof
 script: ./script/cibuild
 branches:
   only:
