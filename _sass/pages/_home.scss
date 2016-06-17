@@ -194,7 +194,7 @@
 .clients {
   .gallery {
     /*height: 500px\9;*/
-    height: auto;
+    height: auto\9;
     @include responsive {
       /*height: 1000px\9;*/
     }
