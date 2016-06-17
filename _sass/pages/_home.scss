@@ -194,8 +194,11 @@
 .clients {
   .gallery {
     height: 160px\9;
-    .item a {
-      width: auto\9;
+    .item {
+      position: relative;
+        /*a {
+        width: auto\9;
+      }*/
     }
     .controls {
       display: none\9;
