@@ -193,11 +193,7 @@
 /* Adding overriding styling of the gallery for IE8 support */
 .clients {
   .gallery {
-    /*height: 500px\9;*/
     height: auto\9;
-    @include responsive {
-      /*height: 1000px\9;*/
-    }
     .item {
       position: relative\9;
     }
