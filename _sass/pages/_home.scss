@@ -190,9 +190,16 @@
   }
 }
 
+/* Adding overriding styling of the gallery for IE8 support */
 .clients {
   .gallery {
     height: 160px\9;
+    .item a {
+      width: auto\9;
+    }
+    .controls {
+      display: none\9;
+    }
   }
 }
 
