@@ -190,6 +190,12 @@
   }
 }
 
+.clients {
+  .gallery {
+    height: 160px;
+  }
+}
+
 .space-below {
   @include desktop {
     margin-bottom: 1em;
