@@ -190,6 +190,19 @@
   }
 }
 
+/* Adding overriding styling of the gallery for IE8 support */
+.clients {
+  .gallery {
+    height: auto\9;
+    .item {
+      position: relative\9;
+    }
+    .controls {
+      display: none\9;
+    }
+  }
+}
+
 .space-below {
   @include desktop {
     margin-bottom: 1em;
