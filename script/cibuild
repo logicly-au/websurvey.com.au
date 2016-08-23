@@ -2,10 +2,8 @@
 set -e # halt script on error
 
 bundle exec jekyll build
-#bundle exec htmlproof ./_site --check-html --disable-external
 $HOME/.local/bin/html5validator --root ./_site
 bundle exec htmlproofer ./_site --disable-external
-node --version
-./node_modules/a11y/cli.js --help
-./node_modules/a11y/cli.js {_site/*.html,_site/**/*.html} --fail-on-error
-echo Here with $?
+#node --version
+#./node_modules/a11y/cli.js --help
+#./node_modules/a11y/cli.js {_site/*.html,_site/**/*.html}

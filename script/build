@@ -1,29 +1,12 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-if command -v ruby >/dev/null 2>&1 && command -v gem >/dev/null 2>&1; then
-  RUBYPATH="$(ruby -rubygems -e 'puts Gem.user_dir')"
-fi
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll bundle exec jekyll build \
+  || echo "Fail!"
 
-if command -v python >/dev/null 2>&1; then
-  PYTHONPATH="$(python -m site --user-base)"
-fi
+docker run --rm --label=html-proofer --volume=$(pwd)/_site:/srv/site -it 18fgsa/html-proofer /srv/site --disable-external --url-ignore "/^#$/" \
+  || echo "Fail!"
 
-command -v $RUBYPATH/bin/bundle >/dev/null 2>&1  \
-  || gem install --user-install bundler
+docker run --rm --label=html5validator --volume=$(pwd)/_site:/mnt/site -it stratdat/html5validator \
+  || echo "Fail!"
 
-command -v $RUBYPATH/bin/jekyll >/dev/null 2>&1  \
-  || gem install --user-install jekyll
-
-command -v $RUBYPATH/bin/htmlproof >/dev/null 2>&1 \
-  || gem install --user-install html-proofer
-
-command -v $PYTHONPATH/bin/html5validator >/dev/null 2>&1 \
-  || pip install --user html5validator
-
-$RUBYPATH/bin/bundle exec $RUBYPATH/bin/jekyll build
-$PYTHONPATH/bin/html5validator --root ./_site
-echo "skipping htmlproof until fixed in El Capitan"
-#$RUBYPATH/bin/bundle exec $RUBYPATH/bin/htmlproofer ./_site --disable-external
-(sleep 10; open http://127.0.0.1:4000) &
-$RUBYPATH/bin/bundle exec $RUBYPATH/bin/jekyll serve

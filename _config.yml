@@ -1,4 +1,17 @@
-exclude: [node_modules,vendor]
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               WebSurvey
+url:                 http://www.websurvey.com.au
+
+# About/contact
+author:
+  name:              'WebSurvey'
+  email:             'info@websurvey.com.au'
+  github:            'https://github.com/strategicdata/websurvey.com.au'
+
+exclude: [node_modules,vendor,blog,_posts]
 defaults:
   -
     scope:
