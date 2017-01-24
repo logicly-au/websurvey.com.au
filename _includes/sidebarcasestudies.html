@@ -1,0 +1,22 @@
+<!-- sidebar -->
+<div class="col-md-3 sidebar">
+  <!-- Sections Menu-->
+  <div class="section-menu">
+    <ul class="nav nav-list">
+        <li {% if include.param == "studyone" %} class="active" {% endif %}>
+        <a href="/case-studies/" class="first">
+            Case Study One
+            <small>Provision of gap-analysis survey solution</small>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+      <li {% if include.param == "studytwo" %} class="active" {% endif %}>
+        <a href="/case-studies/studytwo/" class="first">
+            Case Study Two
+            <small>Statewide mental health data collection and provision of validated data to the Commonwealth</small>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
