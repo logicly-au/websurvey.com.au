@@ -3,7 +3,7 @@ cache:
   - bundler
   - pip
 rvm:
-  - 2.3.1
+  - 2.6
 jdk:
   - oraclejdk16
 before_script:
