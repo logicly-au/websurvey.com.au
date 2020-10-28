@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll bundle exec jekyll build \
-  || echo "Fail!"
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll bundle exec jekyll build
 
-docker run --rm --label=html-proofer --volume=$(pwd)/_site:/srv/site -it 18fgsa/html-proofer /srv/site --disable-external --url-ignore "/^#$/" \
-  || echo "Fail!"
+docker run --rm --label=html-proofer --volume=$(pwd)/_site:/srv/site -it 18fgsa/html-proofer /srv/site --disable-external --url-ignore "/^#$/"
 
-docker run --rm --label=html5validator --volume=$(pwd)/_site:/mnt/site -it stratdat/html5validator \
-  || echo "Fail!"
-
+docker run --rm --label=html5validator --volume=$(pwd)/_site:/app -it stratdat/html5validator
