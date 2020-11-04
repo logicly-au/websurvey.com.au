@@ -1,0 +1,27 @@
+---
+title: Infrastructure Updates | WebSurvey
+description: WebSurvey is an online survey business created &amp; managed by survey experts. We can run your online surveys for you. Located in Melbourne, Australia.
+---
+<!-- ======== @Region: #content ======== -->
+<h2 class="title-divider">
+  <span><span class="de-em">WebSurvey</span> Infrastructure Updates</span>
+</h2>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <p>WebSurvey is hosted in Amazon Web Services Sydney (AWS Sydney). AWS Cloud services have been subject to an Australian government <a href="https://www.cyber.gov.au/acsc/view-all-content/ism">Information Security Manual (ISM)</a> by an independent IRAP assessment (see <a href="https://aws.amazon.com/compliance/irap/">https://aws.amazon.com/compliance/irap/</a> for more information) and is recognised as a robust, secure cloud hosting service.</p>
+
+  <p>Using the services of AWS Sydney enables us to take advantage of the benefits offered by cloud-based hosting infrastructure, while ensuring data continues to be hosted in Australia, not offshore. These benefits include being able to flexibly increase and decrease capacity to better manage fluctuations in demand as well as facilitating uninterrupted service provision during upgrade and patching processes essential for the reliable and secure operation of our systems.</p>
+
+  <h3>AWS database maintenance windows</h3>
+
+  <p>Every AWS hosted database server has a weekly maintenance window during which any system changes are applied automatically. For instances hosted in the Sydney region, the 30-minute maintenance window is selected at random between 10pm - 6am AEST on any weekday.</p>
+
+  <p>While random, the scheduling is designed to ensure the lowest possible number of servers are being updated at any given time, mitigating potential performance issues as much as possible. See <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html#Concepts.DBMaintenance">AWS RDS User Guide</a> for more information.</p>
+
+  <p>The window for each of the WebSurvey database servers occurs on different days so an update doesn’t cause an outage for the whole database. The exception is a cluster update, however, these are rare updates and are carefully managed to reduce the impact on clients.</p>
+
+  <h3>Server updates</h3>
+
+  <p>Updates to the web servers are managed by Strategic Data through a process called Blue/Green deployment. This allows for updates to the web servers to occur without taking the system offline. Instead, a new set of web servers is added to the cluster and, once they are determined to be stable, the old ones are retired.</p>
+
+</div>
