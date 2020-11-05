@@ -4,7 +4,7 @@
     margin-top: 1.5em;
   }
   .section-menu ul.nav-list {
-    padding: 2em 0em 2em 2em;
+    padding: 2em 0;
     margin-left: 0;
     @include desktop {
       border-right: 1px solid $border-grey;
