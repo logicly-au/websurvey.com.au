@@ -26,6 +26,7 @@ jobs:
       - name: Build site with Jekyll
         uses:  helaili/jekyll-action@v2
         with:
+          pre_build_commands: gem update --system
           build_only: true
           build_dir: _site
           jekyll_src: _source
