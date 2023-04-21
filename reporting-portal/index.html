@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WebSurvey Reporting Portal Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Themelize.me">
+
+    <!-- Stylesheets -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="/css/ws-main.min.css" rel="stylesheet">
+
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" href="/img/favicons/safari-pinned-tab.svg">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/x-icon" href="/img/favicons/favicon.ico" sizes="16x16">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <meta name="theme-color" content="#98002e">
+    <meta name="msapplication-TileColor" content="#98002e">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Scripts -->
+    <!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
+    <!--[if lt IE 9]>
+      <script src="/plugins/html5shiv/dist/html5shiv.js"></script>
+      <script src="/plugins/respond/respond.min.js"></script>
+    <![endif]-->
+    <script src="/minjs/ws-main.min.js"></script>
+    <script src="/flex_monster_config/component/flexmonster/flexmonster.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K8NQDBM');
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body class="page page-index-static" id="top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT8W97X" height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <a href="#content" class="sr-only">Skip to content</a>
+    <!-- ======== @Region: #navigation ======== -->
+<div id="navigation">
+  <div class="navbar-static-top">
+    <!--Header upper region-->
+    <div class="header-upper">
+    </div>
+    <!--Header & Branding region-->
+    <div class="header">
+      <div class="header-inner container">
+        <div class="navbar">
+          <div class="pull-left logo-box">
+            <a class="navbar-brand" href="/" title="Home">
+              <img src="/img/web-survey-logo.png" class="img-responsive" width="300" height="67" alt="Web Survey">
+            </a>
+            <div class="slogan">online data collection expertise</div>
+          </div>
+          <div class="contact-icon-box">
+            <i class="fa fa-phone fa-flip-horizontal phone-icon"></i><span class="sr-only">Phone number</span>
+            <span>
+              <a  href="tel:0393409001"
+                  onclick=" ga('send', {
+                            hitType: 'event',
+                            eventCategory: 'Contact',
+                            eventAction: 'link',
+                            eventLabel: 'Phone'
+                        });">
+                +613 9340 9001 <span class="sr-only">(calls number)</span>
+              </a>
+            </span>
+          </div>
+          <a href="#top" class="navbar-btn" data-toggle="jpanel-menu" data-target=".navbar-collapse" data-direction="right">
+            <i class="fa fa-bars"></i><span class="sr-only">Collapsable Menu</span>
+          </a>
+          <!--everything within this div is collapsed on mobile-->
+          <div class="navbar-collapse collapse" role="navigation">
+            <!--main navigation-->
+            <ul class="nav navbar-nav">
+              <li class="home-link active">
+                <a href="/"><i class="fa fa-home"></i><span class="sr-only">Home</span></a>
+              </li>
+             <li>
+                <a href="/about/">About</a>
+              </li>
+              <li>
+                <a href="/features/">Features</a>
+              </li>
+              <li>
+                <a href="/services/">Services</a>
+              </li>
+              <li>
+                <a href="/data-collection/">Data Collection</a>
+              </li>
+              <li>
+                <a href="/case-studies/">Case Studies</a>
+              </li>
+              <li class="dropdown">
+                <a href="/faq/" class="dropdown-toggle" id="faq-drop" data-hover="dropdown" data-toggle="dropdown">FAQ</a>
+                <!-- Menu -->
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/faq/" class="menu-item">Getting Started</a></li>
+                  <li><a href="/faq/technical-features/" class="menu-item">Technical Features</a></li>
+                  <li><a href="/faq/availability/" class="menu-item">Hosting</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/contact/">Contact</a>
+              </li>
+              <li>
+                <a href="https://demo.websurvey.net.au/" target="_blank">Demo survey <span class="sr-only">(opens new window)</span></a>
+              </li>
+            </ul>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div role="main">
+      <div id="content">
+        <div class="container">
+          <h2 class="title-divider">
+  <span>WebSurvey<span> Reporting Portal</span></span>
+</h2>
+
+<!-- 1. Create a DIV container to insert the component -->
+<div id="pivotContainer"></div>
+
+<!-- 2. Embed the component using flexmonster.embedPivotComponent() -->
+<script type="text/javascript">
+	flexmonster.embedPivotComponent("../flex_monster_config/component/flexmonster/", "pivotContainer", "100%", "615", {
+		configUrl: "/reporting-portal/report.xml"
+	}, true);
+</script>
+
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+<!-- ======== @Region: #footer ======== -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col">
+        <div class="block contact-block">
+          <!-- @todo: replace with company contact details -->
+          <h4> Contact Us</h4>
+          <!-- address -->
+          <address>
+            <ul class="fa-ul">
+              <li>
+                <span class="sr-only">Phone number:</span><i class="fa fa-li fa-phone"></i>
+                <a  href="tel:0393409001"
+                    onclick=" ga('send', {
+                              hitType: 'event',
+                              eventCategory: 'Contact',
+                              eventAction: 'link',
+                              eventLabel: 'Phone'
+                          });"
+                          >
+                  +613 9340 9001 <span class="sr-only">(calls number)</span>
+                </a>
+              </li>
+              <li>
+                <span class="sr-only">Email:</span><i class="fa fa-li">@</i>
+                <a href="mailto:info@websurvey.com.au"
+                onclick=" ga('send', {
+                          hitType: 'event',
+                          eventCategory: 'Contact',
+                          eventAction: 'link',
+                          eventLabel: 'Email'
+                      });">
+                  info@websurvey.com.au
+                </a>
+              </li>
+              <li>
+                <span class="sr-only">Street Address:</span><i class="fa fa-li fa-home"></i>
+                <a href="https://www.google.com/maps/dir//51-55+Johnston+St,+Fitzroy+VIC+3065,+Australia/@-37.797876,144.942155,11z/data=!4m9!4m8!1m0!1m5!1m1!1s0x6ad643274334fbcf:0x37e2cf3b959ac1d0!2m2!1d144.976574!2d-37.797881!3e0?hl=en-US"
+                target="_blank"
+                onclick=" ga('send', {
+                          hitType: 'event',
+                          eventCategory: 'Contact',
+                          eventAction: 'link',
+                          eventLabel: 'Address'
+                      });">
+                      2nd floor, 51 – 55 Johnston Street, Fitzroy , Victoria 3065, Australia
+                </a>
+              </li>
+              <li>
+                <span class="sr-only">Mailing Address:</span><i class="fa fa-li fa-envelope"></i>
+                PO Box 1166, Carlton, Victoria 3053, Australia
+              </li>
+            </ul>
+          </address>
+          <!-- /address -->
+        </div>
+      </div>
+      <!-- Hiding Stay in touch box that is not working -->
+      <!--<div class="col-md-4 col">
+        <div class="block newsletter">
+          <h4>Stay in touch</h4>
+          <p>Stay up to date with our latest news and product releases by signing up to our newsletter.</p>-->
+
+          <!-- Begin MailChimp Signup Form -->
+          <!--<div id="mc_embed_signup">
+            <form
+                  action="//websurvey.us11.list-manage.com/subscribe/post?u=b1dbc0432a40a6e28b4984351&amp;id=51589fb78a"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="validate"
+                  target="_blank"
+                  novalidate
+                  onsubmit="  ga('send', {
+                              hitType: 'event',
+                              eventCategory: 'Subscriptions',
+                              eventAction: 'signup',
+                              eventLabel: 'Newsletter'
+                            });">
+              <div id="mc_embed_signup_scroll">
+                <div class="indicates-required">
+                  <span class="asterisk">*</span> indicates required
+                </div>
+                <div class="mc-field-group">
+                	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                  </label>
+              	  <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>-->    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <!--<div style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_b1dbc0432a40a6e28b4984351_51589fb78a" tabindex="-1" value="">
+                </div>
+                <div class="clear">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-subscribe">
+                </div>
+              </div>
+            </form>
+          </div>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>-->
+          <!--End mc_embed_signup-->
+        <!--</div>
+      </div>-->
+    </div>
+    <div class="row">
+      <div id="toplink">
+        <a href="#top" class="top-link" title="Back to top">Back To Top <i class="fa fa-chevron-up"></i></a>
+      </div>
+      <div class="subfooter">
+        <div class="col-md-12">
+          <a class="navbar-brand" href="/" title="WebSurvey Home">
+            <img src="/img/web-survey-logo-sm.png" width="100" height="22" alt="WebSurvey">
+            <span class="sr-only">Home</span>
+          </a>
+          <span class="strat-dat"> by
+            <a href="https://www.logicly.com.au/" title="Logicly" target="_blank">Logicly<span class="sr-only">(opens new window)</span>
+            </a> &copy; 2023
+          </span>
+          <ul class="list-inline footer-menu">
+            <li><a href="/about/terms/">Terms</a></li>
+            <li><a href="/about/accessibility/">Accessibility</a></li>
+            <li><a href="/about/privacy/">Privacy</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

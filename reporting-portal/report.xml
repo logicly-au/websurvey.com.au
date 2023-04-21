@@ -1,0 +1,162 @@
+<config>
+    <dataSource type="csv">
+        <filename>/reporting-portal/demo-data.csv</filename>
+    </dataSource>
+    <defaultSlice>
+        <axes>
+            <axis name="rows">
+                <hierarchy>
+                    <dimensionName>[Measures]</dimensionName>
+                    <hierarchyName>[Measures]</hierarchyName>
+                </hierarchy>
+            </axis>
+            <axis name="columns">
+                <hierarchy sort="asc">
+                    <dimensionName>Gender</dimensionName>
+                    <hierarchyName>Gender</hierarchyName>
+                </hierarchy>
+                <hierarchy sort="asc">
+                    <dimensionName>Division</dimensionName>
+                    <hierarchyName>Division</hierarchyName>
+                </hierarchy>
+                <expanded>
+                    <tuple><![CDATA[gender.[m]]]></tuple>
+                    <tuple><![CDATA[gender.[f]]]></tuple>
+                </expanded>
+            </axis>
+            <axis name="pages"/>
+        </axes>
+        <measures>
+            <measure aggregation="average" active="true" format="1xq6jgdg">Strength1</measure>
+            <measure aggregation="average" active="true" format="1xq6k9rw">Strength2</measure>
+            <measure aggregation="average" active="true" format="1xq6ljli">Strength3</measure>
+            <measure aggregation="average" active="true" format="1xq6kmmx">Strength4</measure>
+            <measure aggregation="average" active="true" format="1xq6l4cl">Strength5</measure>
+            <measure aggregation="average" active="true" format="1xq6lb46">Stress</measure>
+        </measures>
+    </defaultSlice>
+    <params>
+        <param name="configuratorActive">true</param>
+        <param name="configuratorButton">true</param>
+        <param name="configuratorMatchHeight">false</param>
+        <param name="viewType">grid</param>
+        <param name="zoom">1</param>
+        <param name="gridTitle"></param>
+        <param name="chartTitle"></param>
+        <param name="showFilter">true</param>
+        <param name="showFilterInCharts">true</param>
+        <param name="showAggregations">true</param>
+        <param name="showHierarchyCaptions">true</param>
+        <param name="showMemberProperties">false</param>
+        <param name="memberProperties"></param>
+        <param name="chartOneLevel">false</param>
+        <param name="chartAutoRange">false</param>
+        <param name="chartReversedAxes">false</param>
+        <param name="chartMultipleMeasures">false</param>
+        <param name="showHeaders">true</param>
+        <param name="showReportFiltersArea">true</param>
+        <param name="editing">false</param>
+        <param name="drillThrough">true</param>
+        <param name="sorting">on</param>
+        <param name="fitGridlines">false</param>
+        <param name="expandAll">false</param>
+        <param name="drillAll">false</param>
+        <param name="showTotals">true</param>
+        <param name="showFiltersExcel">false</param>
+        <param name="showHierarchies">true</param>
+        <param name="showGrandTotals">on</param>
+        <param name="datePattern">dd/MM/yyyy</param>
+        <param name="dateTimePattern">dd/MM/yyyy HH:mm:ss</param>
+        <param name="showChartsWarning">true</param>
+        <param name="showChartMeasures">true</param>
+        <param name="showChartLegendButton">false</param>
+        <param name="defaultHierarchySortName">asc</param>
+        <param name="ignoreQuotedLineBreaks">true</param>
+        <param name="highlightUpdates">true</param>
+        <param name="classicView">false</param>
+        <param name="flatView">false</param>
+        <param name="useOlapFormatting">false</param>
+        <param name="showDefaultSlice">true</param>
+        <param name="showCalculatedValuesButton">true</param>
+        <param name="chartType" pieDataIndex="0" labelsHierarchy="" position="bottom" activeMeasure="">bar</param>
+        <param name="localSettingsUrl"></param>
+    </params>
+    <format name="1xq6jgdg">
+        <param name="decimalPlaces">1</param>
+        <param name="maxDecimalPlaces">-1</param>
+        <param name="maxSymbols">20</param>
+        <param name="currencySymbolAlign">left</param>
+        <param name="thousandsSeparator"><![CDATA[ ]]></param>
+        <param name="decimalSeparator"><![CDATA[.]]></param>
+        <param name="currencySymbol"><![CDATA[]]></param>
+        <param name="nullValue"><![CDATA[]]></param>
+        <param name="infinityValue"><![CDATA[Infinity]]></param>
+        <param name="divideByZeroValue"><![CDATA[Infinity]]></param>
+        <param name="textAlign">right</param>
+    </format>
+    <format name="1xq6k9rw">
+        <param name="decimalPlaces">1</param>
+        <param name="maxDecimalPlaces">-1</param>
+        <param name="maxSymbols">20</param>
+        <param name="currencySymbolAlign">left</param>
+        <param name="thousandsSeparator"><![CDATA[ ]]></param>
+        <param name="decimalSeparator"><![CDATA[.]]></param>
+        <param name="currencySymbol"><![CDATA[]]></param>
+        <param name="nullValue"><![CDATA[]]></param>
+        <param name="infinityValue"><![CDATA[Infinity]]></param>
+        <param name="divideByZeroValue"><![CDATA[Infinity]]></param>
+        <param name="textAlign">right</param>
+    </format>
+    <format name="1xq6kmmx">
+        <param name="decimalPlaces">1</param>
+        <param name="maxDecimalPlaces">-1</param>
+        <param name="maxSymbols">20</param>
+        <param name="currencySymbolAlign">left</param>
+        <param name="thousandsSeparator"><![CDATA[ ]]></param>
+        <param name="decimalSeparator"><![CDATA[.]]></param>
+        <param name="currencySymbol"><![CDATA[]]></param>
+        <param name="nullValue"><![CDATA[]]></param>
+        <param name="infinityValue"><![CDATA[Infinity]]></param>
+        <param name="divideByZeroValue"><![CDATA[Infinity]]></param>
+        <param name="textAlign">right</param>
+    </format>
+    <format name="1xq6l4cl">
+        <param name="decimalPlaces">1</param>
+        <param name="maxDecimalPlaces">-1</param>
+        <param name="maxSymbols">20</param>
+        <param name="currencySymbolAlign">left</param>
+        <param name="thousandsSeparator"><![CDATA[ ]]></param>
+        <param name="decimalSeparator"><![CDATA[.]]></param>
+        <param name="currencySymbol"><![CDATA[]]></param>
+        <param name="nullValue"><![CDATA[]]></param>
+        <param name="infinityValue"><![CDATA[Infinity]]></param>
+        <param name="divideByZeroValue"><![CDATA[Infinity]]></param>
+        <param name="textAlign">right</param>
+    </format>
+    <format name="1xq6lb46">
+        <param name="decimalPlaces">1</param>
+        <param name="maxDecimalPlaces">-1</param>
+        <param name="maxSymbols">20</param>
+        <param name="currencySymbolAlign">left</param>
+        <param name="thousandsSeparator"><![CDATA[ ]]></param>
+        <param name="decimalSeparator"><![CDATA[.]]></param>
+        <param name="currencySymbol"><![CDATA[]]></param>
+        <param name="nullValue"><![CDATA[]]></param>
+        <param name="infinityValue"><![CDATA[Infinity]]></param>
+        <param name="divideByZeroValue"><![CDATA[Infinity]]></param>
+        <param name="textAlign">right</param>
+    </format>
+    <format name="1xq6ljli">
+        <param name="decimalPlaces">1</param>
+        <param name="maxDecimalPlaces">-1</param>
+        <param name="maxSymbols">20</param>
+        <param name="currencySymbolAlign">left</param>
+        <param name="thousandsSeparator"><![CDATA[ ]]></param>
+        <param name="decimalSeparator"><![CDATA[.]]></param>
+        <param name="currencySymbol"><![CDATA[]]></param>
+        <param name="nullValue"><![CDATA[]]></param>
+        <param name="infinityValue"><![CDATA[Infinity]]></param>
+        <param name="divideByZeroValue"><![CDATA[Infinity]]></param>
+        <param name="textAlign">right</param>
+    </format>
+</config>
