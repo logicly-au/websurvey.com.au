@@ -26,22 +26,21 @@ jobs:
       - name: Build site with Jekyll
         uses:  helaili/jekyll-action@v2
         with:
-          pre_build_commands: gem update --system
+          pre_build_commands: gem update --system --silent
           build_only: true
           build_dir: _site
-          jekyll_src: _source
           jekyll_build_options: "--config _config.yml"
 
       - name: HTML proofer
         uses: docker://18fgsa/html-proofer
         with:
-          args: /github/workspace/_site --disable-external --empty-alt-ignore --url-ignore "/^#$/"
+          args: ./_site --disable-external --empty-alt-ignore --url-ignore "/^#$/"
 
       - name: HTML5 validator
         uses: docker://stratdat/html5validator
         with:
           entrypoint: html5validator
-          args: --root /github/workspace/_site
+          args: --root ./_site
 
       # push to ghpages
       - name: Check GitHub Pages status
