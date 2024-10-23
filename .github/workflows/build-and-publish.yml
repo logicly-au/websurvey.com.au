@@ -37,7 +37,7 @@ jobs:
           args: ./_site --disable-external --empty-alt-ignore --url-ignore "/^#$/"
 
       - name: HTML5 validator
-        uses: docker://stratdat/html5validator
+        uses: docker://logicly/html5validator
         with:
           entrypoint: html5validator
           args: --root ./_site
