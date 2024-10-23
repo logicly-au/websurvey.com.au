@@ -54,7 +54,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v3
         with:
           build_dir: _site
-          fqdn: websurvey.com.au
+          fqdn: www.websurvey.com.au
           jekyll: false
           target_branch: gh-pages
         env:
